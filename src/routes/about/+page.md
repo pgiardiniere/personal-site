@@ -19,3 +19,8 @@ src/routes/about/+page.md
 ```
 
 Here's the [home link](/) if you wanna go back.
+
+
+This starter was made by Josh Collinsworth. You can <a rel="external" href="https://joshcollinsworth.com/contact">get in touch with Josh here</a>.
+
+Big thanks to Josh, find the license for his starter code here (TODO: Include link to MIT license in final distribution)
