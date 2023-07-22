@@ -1,9 +1,12 @@
 import { error } from '@sveltejs/kit'
 
-// Ensures all pages under this layout (which is all of them) are statically prerendered at build time 
-export const prerender = true
-
-// Allows client side routing. Necessary for page transitions and link prefetching; change to false if you prefer ordinary routing without JS
+// csr is for 'client side rendering', as opposed to 'ssr' (server-side rendering).
+// Allows client side routing. Necessary for page transitions and link prefetching;
+// change to false if you prefer ordinary routing without JS
+//
+// see:
+//    https://learn.svelte.dev/tutorial/csr
+//    https://kit.svelte.dev/docs/page-options 
 export const csr = true
 
 export const load = async ({ url, fetch }) => {
