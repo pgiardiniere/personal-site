@@ -24,7 +24,13 @@ For a full description, you may review the
 
 #### Katex
 
-I have added [KaTeX](https://katex.org/) to the project for simple & performant static LaTeX rendering functionality. I added 
+I have added [KaTeX](https://katex.org/) to the project for simple & performant static LaTeX rendering functionality. I was specifically able to add this through the following example [here](https://svelte.dev/repl/49ff6c089825418888cf804d9dde77bc?version=4.1.0).
+
+It's the simplest way of integrating it. It would have been nice to be able to use `$` and `$$` syntax directly in markdown (the same worfklow as in Jupyterlab) but that MDSveX doesn't support it.
+
+Instead, you must escape to Svelte html on a new line in your `.md` file and use the `Katex` component within that context to get it to render. Having used it just a few times I can say with confidence it's still a very pleasant experience despite this workaround.
+
+TODO: include some discussion of MDX, MDSvex, maybe the github issue where functionality is not supported. MAYBE mention the community pkg which attempt to address.
 
 #### Drafts
 
