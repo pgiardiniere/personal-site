@@ -40,4 +40,5 @@ Since these markdown files include Svelte HTML escapes & custom functionality, I
 
 I would have like to just tell the Svelte compiler to ignore it, but there's not an option for that anymore. I found a discussion (TODO: Link) about this same issue, and found that unfortunately the best workflow is another workaround.
 
-TODO: Finish
+TODO: Finish. IF section goes too long, simply update & link the readme.md in drafts folder on GitHub for this repo.
+
