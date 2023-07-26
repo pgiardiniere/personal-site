@@ -18,7 +18,9 @@ The template provides an extremely solid base of functionality for a static blog
 
 ### Given functionality
 
-For a full description, you may review the 
+In summary, it's ... ... ...
+
+For a full summary, you may review the [original template's readme.md](https://github.com/josh-collinsworth/sveltekit-blog-starter/blob/main/README.md).
 
 ### Modifications
 
