@@ -34,5 +34,10 @@ TODO: include some discussion of MDX, MDSvex, maybe the github issue where funct
 
 #### Drafts
 
+Drafts are important, as I've been blogging in University I've come to rely on writing markdown as a place to organize my thinking. Being able to seamlessly include links, figures, maths, and more in one screen I've found to be an incredibly powerful tool that makes me more effective in problem solving.
 
+Since these markdown files include Svelte HTML escapes & custom functionality, I need to have them rendered to the site. But many drafts should not be published to the static site's build directory when `npm run build` is executed. 
 
+I would have like to just tell the Svelte compiler to ignore it, but there's not an option for that anymore. I found a discussion (TODO: Link) about this same issue, and found that unfortunately the best workflow is another workaround.
+
+TODO: Finish
