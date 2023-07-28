@@ -8,22 +8,12 @@ If you're doing it right, this `/drafts` folder will be perpetually empty in you
 
 ## Reasoning
 
-The drafts folder is basically a compromise/workaround to accommodate my preferred workflow.
+The drafts folder is a workaround compromise to enable my preferred workflow.
 
-I publish pages to this blog of ideas that are a certain level of refined. But during day-to-day work, I find it extremely helpful to keep notes as I'm working through problems. Most of these are not worth publishing, it's just the process of writing & viewing changes in the canvas itself which is helpful.
-
-Before, I achieved this in temporary raw text files (always in Sublime Text, my preferred editor for exclusively that use case). The format has the advantage of being dead simple to use and extremely quick. But once I got used to regularly publishing blog posts, I found it limiting - you can't integrate links smoothly in writing, and obviously there's no screenshots, graphics, or math notation of any kind.
-
-Markdown solves these issues for us, but introduces some more friction to the process, as we specifically want to avoid publishing those scratch notes to the site.
+I only publish pages that have been edited past a certain level of quality. Many potential posts which begin the draft process never make it to publishing, as I find the process of taking notes an end unto itself. Writing & viewing changes in the canvas helps me solve difficult problems more quickly, but often doesn't contain novel information or unique perspectives.
 
 The laziest way to achieve this would be to simply could keep an entirely separate build of the site in its own directory, but this introduces friction of maintaining/keeping in-sync with the main site (and is just plain annoying). Git branches are a better way of solving this, but introduces undue friction to the process in the form of frequent branch switching & merging.
 
-A preferred solution would be to keep a `/drafts` folder inside `src/routes/` which we explicitly set `npm run build` to ignore, but there is no longer a good way to do that directly within SvelteKit. But as per the discussion on StackOverflow [here](https://stackoverflow.com/questions/69364069/how-do-i-exclude-files-from-svelte-kit-build), there is a simple npm workaround.
+A preferred solution would be to keep a `drafts-*.md` files inside `src/routes/posts` which we explicitly set `npm run build` to ignore, but there is no good way to do that directly within SvelteKit, as per the full discussion on StackOverflow comments [here](https://stackoverflow.com/a/69457826). There appears to be a one-liner bash workaround in the comments there, but it is not applicable for this use case, as using a raw `mv` in `package.json` when there are potentially 0, 1, or >1 files matching the pattern `drafts-*` means `mv` can error out (if 0 files are found to move). The first thought to work around this while sticking to native bash is to conditionally apply `mv` if file matches are found, but there's not a super elegant to handle this as a 1-liner in bash that I was aware of, due to having glob pattern matching with square brackets (single `[]` and double `[[]]`) being problematic for different reasons.
 
-## The mechanics
-
-In `package.json` we prepended:
-* `dev` with `` and 
-* `build` with ``
-
-You'll always have the dev server up while you're composing drafts (as those markdown files will have Svelte plugin goodies mixed in). So when you're composing git commits they'll always be in the same place, maintaining a clean history on a single branch. Easy. A little hacky? Sure. But hey, that's webdev for ya.
+Since this is just complex complex enough that it would requires a small bash script, we might as well just write it in javascript instead and run it with `node` to keep the project code in a consistent language. So I drafted up the `moveDrafts.cjs` file, and call it before the npm `dev` and `build` scripts execute their default commands in `package.json` to ensure the repo remains in the desired state for development & production builds, respectively.

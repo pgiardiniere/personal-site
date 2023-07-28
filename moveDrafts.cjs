@@ -5,7 +5,7 @@ const path = require('path');
 // Get the command-line arguments
 const args = process.argv.slice(2);
 
-// Define the directories based on the "reverse" argument
+// Define the directories, optionally reversing movement direction
 let sourceDir = './drafts';
 let destinationDir = './src/lib/posts';
 if (args.includes('--reverse')) {
