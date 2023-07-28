@@ -1,6 +1,6 @@
 ---
-title: "Pete's site is live!"
-date: "2021-07-26"
+title: "The site is live!"
+date: "2023-07-26"
 categories: 
   - "site update"
   - "web development"

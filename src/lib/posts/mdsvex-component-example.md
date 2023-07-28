@@ -6,9 +6,6 @@ categories:
   - "sveltekit"
   - "markdown"
   - "svelte"
-coverImage: "/images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg"
-coverWidth: 16
-coverHeight: 9
 excerpt: This post demonstrates how to include a Svelte component in a Markdown post.
 ---
 
@@ -36,9 +33,10 @@ Let's try full width display right here...
 </div>
 
 <div>
-<p> here's a new attempt at inline  <Katex math={"ax^2 + bx + c = 0"}></Katex> and this time it worked.</p>
+<p> here's a new attempt at inline inside html  <Katex math={"ax^2 + bx + c = 0"}></Katex> and this time it worked.</p>
 </div>
 
+So the only thing you can't do is inside raw markdown, which makes sense. Also can't same-line swap md to html, also sensible.
 
 You can inject any Svelte components you want into Markdown! Just import them in a `<script>` tag and then use them wherever you like. 
 
