@@ -1,6 +1,6 @@
 ---
 title: "Why SvelteKit"
-date: "2021-07-26"
+date: "2023-07-26"
 categories: 
   - "site update"
   - "web development"
@@ -17,4 +17,4 @@ I know I can design efficient and elegant UIs because I had already done so with
 
 So there was something particular about React that just didn't sit right. When I started learning Next.js, I thought that would address all my issues, and while it did make the experience a lot better, it still wasn't what I would call a great developer experience.
 
-All javascript tooling in my experience is frustrating to work with, and that includes Svelte/Sveltekit, but what stood out to me was how much markedly improved they are over the existing alternatives
+Javascript tooling in my experience has a steep learning curve (and that includes Svelte/Sveltekit) but what stood out to me was how much markedly improved they are over the existing alternatives
