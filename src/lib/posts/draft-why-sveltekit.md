@@ -11,9 +11,9 @@ I wanted to get a little deeper on why I chose the stack I did for my personal s
 
 ## Why Svelte & SvelteKit
 
-I chose these over the main alternative (React with Next.js) basically because React & Next.js never really jived with me. I had to maintain a React web app for over a year, and after all that time still found myself not really able to work effectively in the stack. 
+I chose these over the main alternative (React with Next.js) basically because React & Next.js never really jived with me. I maintained a React app for over a year, still felt like I was fighting for every ounce of productivity I could muster.
 
-I know I can design efficient and elegant UIs because I had already done so with Flutter to create the TraffickCam mobile app V2, which is published on Google Play and the App Store to this day.
+I was especially frustrated as I had already designed effective and pleasing UIs with Flutter; most notably to create the TraffickCam mobile app (which is available on Google Play & the App Store). I found it so much easier to get over the initial learning curve there.
 
 So there was something particular about React that just didn't sit right. When I started learning Next.js, I thought that would address all my issues, and while it did make the experience a lot better, it still wasn't what I would call a great developer experience.
 
