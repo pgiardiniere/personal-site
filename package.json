@@ -1,8 +1,8 @@
 {
   "name": "sveltekit-blog-starter",
   "version": "1.6.1",
-  "scripts": {
-    "dev": "node ./moveDrafts.cjs && vite dev",
+  "scripts": { 
+    "dev": "node ./moveDrafts.cjs && vite dev --host",
     "build": "node ./moveDrafts.cjs --reverse && vite build",
     "preview": "vite preview",
     "lint": "prettier --ignore-path .gitignore --check -- plugin-search-dir=. . && eslint --ignore-path .gitignore .",
