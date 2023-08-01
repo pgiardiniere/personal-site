@@ -42,13 +42,11 @@ It would have been nice to be able to use `$` and `$$` syntax directly in markdo
 
 #### Drafts
 
-Drafts are important to me - since I started blogging in University I've come to rely on writing markdown as a place to organize my thinking. Being able to seamlessly include links, figures, math, and more in one place I've found to be a very powerful .
+Drafts are important to me - since I started blogging in University I've come to rely on writing markdown as a place to organize my thinking. Being able to seamlessly include links, figures, math, and more in one place I've found to be very powerful.
 
-Since these markdown files include Svelte HTML escapes & custom functionality, I need to have them rendered to the site for the full effect, which is easy - just an `npm run dev` command away. But those drafts must not be published to the final site when `npm run build` is executed.
+Since these markdown files include Svelte markup escapes & custom functionality, I need to have them rendered to the site for the full effect, which is easy - just spin up the dev server. But those drafts must not be published to the final site when a build is executed.
 
-I would have like to just tell the Svelte compiler to ignore it, but there's not quite an option for that anymore (not with the static adapter anyway). I found a discussion (TODO: Link) about this same issue, and found that unfortunately the best workflow is another workaround.
-
-TODO: Finish. IF section goes too long, simply update & link the readme.md in drafts folder on GitHub for this repo.
+Since SvelteKit 1.0's release, you [cannot configure the compiler to ignore routes](https://stackoverflow.com/a/69457826), so ultimately I wrote a solution outside the framework just utilizing nodejs to move the files around before builds and hooked it straight into my package.json to ensure it doesn't require additional thought. You can read more about the implementation [here](https://github.com/pgiardiniere/personal-site/blob/main/drafts/README.md) if you're interested.
 
 #### Swap Static Adapter for Cloudflare Adapter
 
