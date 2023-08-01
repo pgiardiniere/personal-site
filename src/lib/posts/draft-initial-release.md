@@ -44,36 +44,24 @@ TODO: Finish. IF section goes too long, simply update & link the readme.md in dr
 
 #### Swap Static Adapter for Cloudflare Adapter
 
-I'm hosting using [Cloudflare Pages](https://developers.cloudflare.com/pages), as such the starter project's default [static adapter](https://kit.svelte.dev/docs/adapter-static) has been swapped out for the [cloudflare adapter](https://kit.svelte.dev/docs/adapter-cloudflare). Because we're using the an adapter made specifically for the platform, these SSR functions are invoked using the proper Serverless functions for the host platform (note that SvelteKit also distributes first-party adapters for the [Netlify](https://kit.svelte.dev/docs/adapter-netlify) & [Vercel](https://kit.svelte.dev/docs/adapter-vercel) platforms, among [others](https://kit.svelte.dev/docs/adapters)).
+I'm hosting using [Cloudflare Pages](https://developers.cloudflare.com/pages), as such the starter project's default [static adapter](https://kit.svelte.dev/docs/adapter-static) has been swapped out for the [cloudflare adapter](https://kit.svelte.dev/docs/adapter-cloudflare). Because we're using the an adapter made specifically for the platform, any SSR functions would be invoked using the proper Serverless functions for the host platform (note that SvelteKit also distributes first-party adapters for the [Netlify](https://kit.svelte.dev/docs/adapter-netlify) & [Vercel](https://kit.svelte.dev/docs/adapter-vercel) platforms, among [others](https://kit.svelte.dev/docs/adapters)).
 
-Since we swapped adapters, it means we're no longer opting-in to full Static Site Generation (SSG) - we have the option of using Server Side Rendering (SSR) functionality. If you check more closely though, you'll note we're still building a fully-static site. Specifically, see the adapter config in `svelte.config.js` that relates to [prerendered routes](https://kit.svelte.dev/docs/page-options#prerender). And just to be really sure, we also have a `layout.server.js` at the top-level of `\routes` (i.e. all child routes will inherit) which exports `prerender=true`. 
+Despite the swap in adapters, the site is still fully static. SvelteKit allows for free mixing and matching of Server Side Rendered (SSR) and Static Site Generated (SSG) pages, the difference is essentially as follows:
 
-Why? The reason is simple enough: This is just a blog. Serving the same content to every user. It's simpler to just build the whole thing once whenever new content is created and serve that to all users - not dynamically rebuild the page on each new request. So static site generation is the build strategy which most accurately reflects the content being served.
+* **Server Side Rendering (SSR)** pages are built dynamically upon each new request. 
+* **Static Site Generation (SSG)** pages are built once, when the developer runs the `build` command.
 
-In fact, we could go even further and disable client-side rendering (javascript) altogether by setting csr to false, and the only differences would be: 
+Since this site is composed entirely of static content (i.e. for a given page, the exact same content is served to each client regardless of who the request comes from) it makes the most sense to statically pre-render all pages, as this build strategy accurately reflects the content being served & is simpler than dynamically rebuilding on-request.
 
-1. Client-side routing falls back to traditional server-side routing, and 
-2. Page transition animations get disabled.
-
-This all highlights what I really like about the stack: How dead simple it is. Sure, there's a lot of frontend config & jargon to get through up front, but when you stop and look at what it's doing, it's very minimal.
+So, why use SSG? It's the the build strategy which most accurately reflects the content being served. This site hosts a blog & a few other (mostly non-interactive) pages. Further, it serves the same content to every client, regardless of who the user is. So it's simpler to just prerender the whole thing once at the time new content is created and serve that to all users (as opposed to SSR which dynamically rebuilds the page upon each new client request).
 
 <Callout>
-<b>Note:</b>
+<b>Server Rendering Note:</b> 
 
-A potential point of confusion: [csr](https://kit.svelte.dev/docs/page-options#csr) and [ssr](https://kit.svelte.dev/docs/page-options#ssr) are not 'opposites' like you would expect. In fact, even for this static site, both `ssr` and `csr` are used. The terms are just overloaded a bit.
+You might have noticed that these are just two different intervals/strategies for doing the same thing - building (i.e. server-rendering) javascript into a bundle of HTML and (less) javascript. To avoid overloading the term *rendering*, when a static generation strategy is used, you will often see term *prerendering* used instead from the Svelte/SvelteKit docs (In contrast, NextJS uses 'prerendering' in both contexts, see [this](https://nextjs.org/learn/foundations/how-nextjs-works/rendering)). 
 
-<ul>
-  <li> Static Site Generation (SSG) is server-rendered one time for all requests - at the time the developer invokes the build function. </li>
-  <li>Server Side Rendering (SSR) is server-rendered dynamically - each time a client requests a resource, the server builds (i.e. renders) the page and responds to the request with the newly-built content.</li>
-</ul>
+For now, just know that they're fundamentally the same idea - reducing JS down to HTML and (less) JS _before_ you fulfill the client request.
 
-TODO: edit this - this is not entirely correct.
+<b><em>Why bother?</em></b> Server-rendering generally is an advancement over the old status quo of React SPAs (single page application), where shipping the entire application in JS over an effectively empty HTML mule was the norm. This strategy still has uses today, but has slow initial Time-to-Load (TTL) due to large quantity of JS being shipped, and the JS having to build the 'actual' request UI after the DOM indicates the HTML page load is in a ready state (after which hydration can finally occur). As you might guess, placing the page contents behind a JS rebuild hurts SEO, since the HTML on its own shares very little useful information about the page. There's much, much more to this discussion than room to cover here, but these are some useful highlights.
 
-See the [page-options](https://kit.svelte.dev/docs/page-options) first sentence and the relevant linked glossary page on [prerendering](https://kit.svelte.dev/docs/glossary#prerendering).
-
-If your build strategy is SSG: then it's "prerendering"
-
-If your build strategy is SSR: then it's just "rendering"
-
-**So in the context of SvelteKit:** When you see `csr` and `ssr` used together, generally folks are referring to where the javascript is running (on the client vs on the server). In contrast, SSG and SSR refer to different build intervals/strategies for distributing server-side rendered content.
 </Callout>
