@@ -67,5 +67,13 @@ A potential point of confusion: [csr](https://kit.svelte.dev/docs/page-options#c
   <li>Server Side Rendering (SSR) is server-rendered dynamically - each time a client requests a resource, the server builds (i.e. renders) the page and responds to the request with the newly-built content.</li>
 </ul>
 
+TODO: edit this - this is not entirely correct.
+
+See the [page-options](https://kit.svelte.dev/docs/page-options) first sentence and the relevant linked glossary page on [prerendering](https://kit.svelte.dev/docs/glossary#prerendering).
+
+If your build strategy is SSG: then it's "prerendering"
+
+If your build strategy is SSR: then it's just "rendering"
+
 **So in the context of SvelteKit:** When you see `csr` and `ssr` used together, generally folks are referring to where the javascript is running (on the client vs on the server). In contrast, SSG and SSR refer to different build intervals/strategies for distributing server-side rendered content.
 </Callout>
