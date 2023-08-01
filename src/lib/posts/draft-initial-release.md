@@ -10,6 +10,10 @@ excerpt: This post details initial release of website - why it exists and how it
 
 <script>
 	import Callout from '$lib/components/Callout.svelte';
+
+  import Katex from "$lib/components/Katex.svelte"
+
+  const softmax = "L_i = -log{\\left( \\frac {e^{f_{y_i}}} {\\sum_j e^{f_j}} \\right)}"
 </script>
 
 Welcome to the first blog post!
@@ -26,11 +30,15 @@ The template provides an extremely solid base of functionality for a static blog
 
 #### Katex
 
-I have added [KaTeX](https://katex.org/) to the project for simple & performant static LaTeX rendering functionality. I was specifically able to add this through the following example [here](https://svelte.dev/repl/49ff6c089825418888cf804d9dde77bc?version=4.1.0).
+I have added [Katex](https://katex.org/) to the project for simple static Latex rendering functionality. I was specifically able to add this through given sample [here](https://svelte.dev/repl/49ff6c089825418888cf804d9dde77bc?version=4.1.0).
 
-To use it in a post, you escape to Svelte markup on a new line in your `.md` file and use the `Katex` component within that context to get it to render. Having used it a few times, it's still a very pleasant experience despite the workaround.
+You can't use it directly within markdown - you must escape to Svelte markup on a new line in your `.md` file and use the `Katex` component within that context to get it to render. And to avoid escaping every single curly brace `{}` in the Latex, it's best to define your equations upfront inside a `script` tag.
 
-That's the simplest way of integrating it. It would have been nice to be able to use `$` and `$$` syntax directly in markdown (the same worfklow as in Jupyterlab) but MDSveX doesn't support it, and the other folks in the community I've seen attempt syntax like it haven't come up with a cleaner solution as of yet.
+It's still a pleasant experience despite the workaround. For instance, here's the function for a Softmax classifier (i.e. Multiclass Cross-Entropy classifier, if you prefer) as given [here](https://cs231n.github.io/linear-classify/#softmax-classifier) in Stanford's CNNs for Computer Vision materials.
+
+<p><Katex displayMode math={softmax}></Katex></p>
+
+It would have been nice to be able to use `$` and `$$` syntax directly in markdown (the same worfklow as in Jupyterlab) but MDSveX doesn't support it, and the other folks in the community I've seen attempt to integrate syntax like it haven't come up with a cleaner solution as of yet.
 
 #### Drafts
 
