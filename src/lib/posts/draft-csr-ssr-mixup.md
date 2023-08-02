@@ -1,3 +1,17 @@
+---
+title: "Draft csr ssr"
+date: "2023-07-26"
+updated: "2023-07-26"
+categories: 
+  - "site update"
+  - "web development"
+excerpt: A mixup to avoid on SSG/SSR and csr/ssr in SvelteKit
+---
+
+<script>
+  import Callout from '$lib/components/Callout.svelte';
+</script>
+
 ... after some discussion on SSR and SSG (server-side rendering and Static Site Generation, respectively) ...
 ... being this section on csr vs ssr in svelte/sveltekit ...
 ... I got tripped up on it, but SSR/SSG refers to a build strategy / build interval, where csr/ssr in app config just refers to whether you will utilize javascript rendering client-side, server-side, or both. Both is default, and the best way to go...
