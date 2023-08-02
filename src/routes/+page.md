@@ -2,7 +2,9 @@
 	<title>Pete Giardiniere</title>
 </svelte:head>
 
-### Hey I'm Pete. I'm a full stack developer of intelligent systems with a passion for writing performant, maintainable machine learning pipelines.
+# Hey, I'm Pete.
+
+### I'm a full stack developer of intelligent systems with a passion for writing performant, maintainable machine learning pipelines.
 
 #### I live in Philly, where I spend most of my time developing software and writing.
 
