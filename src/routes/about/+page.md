@@ -14,3 +14,6 @@ My task was to write an entirely new app from the ground up using Flutter, then 
 
 I spent a good deal of time reviewing required machine learning & computer vision fundamentals, primarily through paper reading & self-study of Stanford's in Deep Learning for Computer Vision via self-stufy of Stanford's [CS231n: Deep Learning for Computer Vision](http://cs231n.stanford.edu/) coursework.
 
+I then maintained the TraffickCam Search web app, and the TraffickCam API which handles search queries for the webapp (among other responsibilities). 
+
+How it works: Partner investigators (at the time I worked there, they were all from the [National Center for Missing & Exploited Children](https://www.missingkids.org/)) submit an image of a hotel room, scrubbing any victims from the photo. An infilling model then takes the masked region and inpaints it. The inpainted image is then submitted to our image retrieval model trained on our hotels dataset, returning the list of results ranked by similarity.
