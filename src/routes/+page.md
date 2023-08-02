@@ -13,6 +13,6 @@ I designed, wrote, and published the TraffickCam mobile app to Android and iOS a
 
 * [More about me](/about)
 
-* The blog
+* [The blog](/blog)
 
 * My projects
