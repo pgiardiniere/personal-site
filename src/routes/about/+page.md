@@ -2,23 +2,15 @@
 	<title>About</title>
 </svelte:head>
 
-# About
+# About Me
 
-This is an example of how you can have _markdown_ in page content!
+I recently completed my Master's at Temple in Computatational Data Science. I spent several years there at Temple working in Prof. [Richard Souvenir's](https://cis.temple.edu/~souvenir/) Vision, Imaging, and Data Analysis Research (VIDAR) lab.
 
-- How
-- **Cool**
-- Is _that_!?
+In my time there, I worked on many projects, mostly pertaining to [TraffickCam](http://traffickcam.org/about), which prevents human trafficking by applying state-of-the-art computer vision techniques to a unique dataset of hotel room images.
 
-If you like, you can also import markdown into any Svelte page.
+My first project was the TraffickCam Mobile App - the public face of TraffickCam. The mobile app is responsible for crowdsourced data collection, i.e. it's where users submit images of hotel rooms to be added to our dataset of hotel room images. 
 
-Anyway, you can find this file here:
+My task was to write an entirely new app from the ground up using Flutter, then distribute it on the team's existing App Store & Google Play pages. Some of the new required functionality included: Native camera integration & camera preview, a photo review gallery, and strongly-labeled object annotation collection. That app is currently available on the App Store and Google Play Store.
 
-```
-src/routes/about/+page.md
-```
+I spent a good deal of time reviewing required machine learning & computer vision fundamentals, primarily through paper reading & self-study of Stanford's in Deep Learning for Computer Vision via self-stufy of Stanford's [CS231n: Deep Learning for Computer Vision](http://cs231n.stanford.edu/) coursework.
 
-Here's the [home link](/) if you wanna go back.
-
-
-This starter was made by Josh Collinsworth. You can <a rel="external" href="https://joshcollinsworth.com/contact">get in touch with Josh here</a>.
