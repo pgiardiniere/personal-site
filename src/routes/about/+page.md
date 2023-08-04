@@ -4,7 +4,7 @@
 
 # About Me
 
-I recently completed my Master's at Temple in Computatational Data Science. I spent several years there at Temple working in Prof. [Richard Souvenir's](https://cis.temple.edu/~souvenir/) Vision, Imaging, and Data Analysis Research (VIDAR) lab.
+I recently completed my Master's at Temple in Computatational Data Science. I spent several years working in the Vision, Imaging, and Data Analysis Research (VIDAR) lab; advised by [Prof. Souvenir](https://cis.temple.edu/~souvenir/)
 
 In my time there, I worked on many projects, mostly pertaining to [TraffickCam](http://traffickcam.org/about), which prevents human trafficking by applying state-of-the-art computer vision techniques to a unique dataset of hotel room images.
 
@@ -16,4 +16,4 @@ I spent a good deal of time reviewing required machine learning & computer visio
 
 I then maintained the TraffickCam Search web app, and the TraffickCam API which handles search queries for the webapp (among other responsibilities). 
 
-How it works: Partner investigators (at the time I worked there, they were all from the [National Center for Missing & Exploited Children](https://www.missingkids.org/)) submit an image of a hotel room, scrubbing any victims from the photo. An infilling model then takes the masked region and inpaints it. The inpainted image is then submitted to our image retrieval model trained on our hotels dataset, returning the list of results ranked by similarity.
+How it works: Partner investigators from the [National Center for Missing & Exploited Children](https://www.missingkids.org/) submit an image of a hotel room, scrubbing any victims from the photo. An infilling model then takes the masked region and inpaints it. The inpainted image is then submitted to our image retrieval model trained on our hotels dataset, returning the list of results ranked by similarity.
