@@ -48,6 +48,15 @@ Since these markdown files include Svelte markup escapes & custom functionality,
 
 Since SvelteKit 1.0's release, you [cannot configure the compiler to ignore routes](https://stackoverflow.com/a/69457826), so ultimately I wrote a solution outside the framework just utilizing nodejs to move the files around before builds and hooked it straight into my package.json to ensure it doesn't require additional thought. You can read more about the implementation [here](https://github.com/pgiardiniere/personal-site/blob/main/drafts/README.md) if you're interested.
 
+<Callout>
+
+**Hosting Provider Note**: If you're using [Cloudflare Pages](https://developers.cloudflare.com/pages) or another similar hosting provider (Netlify, Vercel, etc.) then you might already have something similar to this functionality provided for you. For cloudflare, it's referred to as [preview deployments](https://developers.cloudflare.com/pages/platform/preview-deployments/) and it integrates directly with your Git workflow.
+
+Ultimately, I just don't find this workflow to be as ergonomic as the one I've made - branch switching for drafts and managing PRs increases cognitive overhead, which decreases the occasions I'll use to write.
+
+Your hosting provder likely integrates with git master channel, where new commits to master trigger the provider to run a new `build` command. Since we've extended `build` with the draft movement script, we can be sure that Cloudflare does not publish unfinished pages for us. I haven't tested with other providers, so your mileage may vary.
+</Callout>
+
 #### Swap Static Adapter for Cloudflare Adapter
 
 I'm hosting using [Cloudflare Pages](https://developers.cloudflare.com/pages), as such the starter project's default [static adapter](https://kit.svelte.dev/docs/adapter-static) has been swapped out for the [cloudflare adapter](https://kit.svelte.dev/docs/adapter-cloudflare). Because we're using the an adapter made specifically for the platform, any SSR functions would be invoked using the proper Serverless functions for the host platform (note that SvelteKit also distributes first-party adapters for the [Netlify](https://kit.svelte.dev/docs/adapter-netlify) & [Vercel](https://kit.svelte.dev/docs/adapter-vercel) platforms, among [others](https://kit.svelte.dev/docs/adapters)).
