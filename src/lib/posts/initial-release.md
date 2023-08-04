@@ -63,18 +63,16 @@ Your hosting provder likely integrates with git master channel, where new commit
 
 I'm hosting using [Cloudflare Pages](https://developers.cloudflare.com/pages) for its ease of use and because I like supporting Cloudflare. They have a good reputation for a reason!
 
-I tested deploying using SvelteKit's [static adapter](https://kit.svelte.dev/docs/adapter-static) (which the starter project uses by default) and the [cloudflare adapter](https://kit.svelte.dev/docs/adapter-cloudflare).
+I tested deploying using SvelteKit's [static adapter](https://kit.svelte.dev/docs/adapter-static) (which the starter project uses by default) and the [cloudflare adapter](https://kit.svelte.dev/docs/adapter-cloudflare), utlimately keeping the original static adapter.
 
-It's recommended to use the adapter for the platform you distribute to, which is why I gave the Cloudflare adapter a shot. The main distinguishing feature with it is that any SSR functions would be invoked using the proper Serverless functions for the host platform. *(Note that SvelteKit also distributes first-party adapters for the [Netlify](https://kit.svelte.dev/docs/adapter-netlify) & [Vercel](https://kit.svelte.dev/docs/adapter-vercel) platforms, among [others](https://kit.svelte.dev/docs/adapters)).*
+It's recommended to use the adapter for the platform you distribute to, which is why I gave the Cloudflare adapter a shot. The main distinguishing feature with it is that any server-side rendering (SSR) requests would be invoked using the proper Serverless functions for the host platform. *(Note that SvelteKit also distributes first-party adapters for the [Netlify](https://kit.svelte.dev/docs/adapter-netlify) & [Vercel](https://kit.svelte.dev/docs/adapter-vercel) platforms, among [others](https://kit.svelte.dev/docs/adapters)).*
 
-I ran into issues getting the static pages to be recognized by the Cloudflare adapter's routing output. Even changing the rules it requested still resulted in failed builds.
-
-SvelteKit allows for free mixing and matching of Server Side Rendered (SSR) and Static Site Generated (SSG) pages, the difference is essentially as follows:
+But what is SSR? How does it differ from other forms of prerendering?
 
 * **Server Side Rendering (SSR)** pages are built dynamically upon each new request. 
 * **Static Site Generation (SSG)** pages are built once and served to all requests.
 
-Since this site is composed entirely of static content (i.e. for a given page, the exact same content is served to each client regardless of who the request comes from) it makes the most sense to pre-render all pages, as this build strategy accurately reflects the content being served & is simpler than dynamically rebuilding on-request (which SSR does).
+Since this site is composed entirely of static content (i.e. for a given page, the exact same content is served to each client regardless of who the request comes from) it makes the most sense to pre-render all pages, as this build strategy accurately reflects the content being served & is simpler than dynamically rebuilding on-request.
 
 And since the `static` adapter supports this fully out of the box, it ultimately wound up being better to just use it and configure Cloudflare to recognize it, rather than use the `cloudflare` adapter and configure Svelte to turn off all SSR functionality.
 
