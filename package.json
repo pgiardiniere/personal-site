@@ -1,7 +1,7 @@
 {
   "name": "sveltekit-blog-starter",
   "version": "1.6.1",
-  "scripts": { 
+  "scripts": {
     "dev": "node ./moveDrafts.cjs && vite dev --host",
     "build": "node ./moveDrafts.cjs --reverse && vite build",
     "preview": "vite preview",
@@ -9,6 +9,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
+    "@sveltejs/adapter-cloudflare": "^2.3.2",
     "@sveltejs/adapter-static": "^1.0.1",
     "@sveltejs/kit": "^1.0.1",
     "@types/katex": "^0.16.1",
