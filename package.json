@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "node ./moveDrafts.cjs && vite dev --host",
     "build": "node ./moveDrafts.cjs --reverse && vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --host",
     "lint": "prettier --ignore-path .gitignore --check -- plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
