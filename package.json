@@ -9,7 +9,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-cloudflare": "^2.3.2",
+    "@sveltejs/adapter-static": "^1.0.1",
     "@sveltejs/kit": "^1.0.1",
     "@types/katex": "^0.16.1",
     "eslint": "^8.31.0",

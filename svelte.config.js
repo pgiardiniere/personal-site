@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-cloudflare'
+import adapter from '@sveltejs/adapter-static'
 import { mdsvex } from 'mdsvex'
 import preprocess from 'svelte-preprocess'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -29,14 +29,7 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter({
-			// Removed * from include to prevent cloudflare from attempting to use SSR
-			// on project pages, as the site is fully SSG (prerendered at build).
-			routes: {
-				include: ['/'],
-				exclude: ['<all>']
-			}
-		}),
+		adapter: adapter(),
 		prerender: {
 			entries: [
 				'*',
