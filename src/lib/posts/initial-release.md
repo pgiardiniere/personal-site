@@ -1,7 +1,7 @@
 ---
 title: "We're live!"
-date: "2023-07-26"
-updated: "2023-07-26"
+date: "2023-08-04"
+updated: "2023-08-04"
 categories: 
   - "site update"
   - "web development"
