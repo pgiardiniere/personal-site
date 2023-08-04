@@ -16,7 +16,7 @@ excerpt: This post details initial release of website - why it exists and how it
   const softmax = "L_i = -log{\\left( \\frac {e^{f_{y_i}}} {\\sum_j e^{f_j}} \\right)}"
 </script>
 
-Welcome to the first blog post!
+Welcome to the first post! This is a tech blog where you can find all manner of details about the projects I've worked on, both past and present. Most recently, I've had a lot of fun putting this site together, so let's get right into it and cover how it's made.
 
 ## The Starter
 
@@ -70,3 +70,9 @@ For now, just know that they're fundamentally the same idea - reducing JS down t
 
 <b><em>Why bother?</em></b> Server-rendering generally is an advancement over the old status quo of React SPAs (single page application), where shipping the entire application in JS over an effectively empty HTML mule was the norm. This strategy still has uses today, but has slow initial Time-to-Load (TTL) due to large quantity of JS being shipped, and the JS having to build the 'actual' request UI after the DOM indicates the HTML page load is in a ready state (after which hydration can finally occur). As you might guess, placing the page contents behind a JS rebuild hurts SEO, since the HTML on its own shares very little useful information about the page. There's a lot more to the discussion than this, but these are some useful starting points.
 </Callout>
+
+## Up Next
+
+---
+
+That does it for this post - expect to see more updates to the site soon. I'm currently in the process of porting blog posts for past projects here. Once some a good bit of the backlog is ported in, expect to see all-new content as well as updates to the site itself. The changes will all be covered here in the blog, so stay tuned for more!
