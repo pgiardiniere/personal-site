@@ -4,7 +4,7 @@
 
 # Hey, I'm Pete.
 
-### I'm a full stack developer of intelligent systems with a passion for writing performant, maintainable machine learning pipelines.
+### I'm a full stack developer with a passion for writing performant, maintainable machine learning pipelines and UIs which enable frictionless human-AI interaction.
 
 #### I live in Philly, where I spend most of my time developing software and writing.
 
