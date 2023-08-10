@@ -1,5 +1,5 @@
 ---
-title: "The Complete TraffickCam Mobile App history is posted!"
+title: "Managing Flutter versions and Camera Plugin Changes"
 date: "2022-01-24"
 updated: "2022-01-24"
 categories: 
