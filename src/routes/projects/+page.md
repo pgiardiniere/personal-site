@@ -4,7 +4,7 @@
 
 # TraffickCam Search
 
-The web search app used by partner investigators. They submit an images to search, along with some optional text & location boundaries to our API, which returns them the most similar set of images, as well as the exact hotel chain & room those images came from.
+The web search app used by partner investigators. They submit an images to search, along with some optional text & location boundaries to our API, which returns them the most similar set of images, as well as the exact hotel location & room those images came from.
 
 <br>
 
