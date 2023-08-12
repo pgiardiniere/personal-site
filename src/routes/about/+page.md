@@ -16,4 +16,4 @@ Prior to Temple, I worked as a Systems Engineer at Cerner, which was my first ex
 
 I have also worked as an independent contractor, mostly focused on house painting, both exterior & interior, which is very rewarding work that I still occasionally dabble in. I briefly worked for Prof. [Zia Hydari](https://business.pitt.edu/professors/zia-hydari/) at Pitt to help redesign his course IT Architectures & Platforms (back when it was still new to the curriculum!) right after I finished my bachelor's in Business Information Systems there.
 
-In my spare time, I like to tinker with computers & software, as well as play games of all sorts with friends. I also play guitar, drums, bass, and various other instruments just for fun - but these days I just focus on guitar.
+In my spare time, I like to tinker with computers & software, as well as play games of all sorts with friends. I also play guitar, drums, bass and other instruments just for fun - but these days I just focus on guitar.
