@@ -12,6 +12,8 @@
 
 I designed, wrote, and published the TraffickCam mobile app to Android and iOS app stores. I maintained the TraffickCam Search webapp and completely rewrote its documentation. And I overhauled the TraffickCam API architecture to make its services more robust, performant, and developer-friendly.
 
+* [Projects I've worked on](/projects)
+
 * [More about me](/about)
 
 * [The blog](/blog)
