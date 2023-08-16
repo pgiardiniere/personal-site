@@ -18,7 +18,7 @@ It also serves as image submission endpoint for the mobile app, among various ot
 
 # TraffickCam Mobile
 
-<img src="/images/tcam-mobile.png" alt="TraffickCam Mobile photo capture screen" style="width:45%; float:right; margin:10px">
+<img src="/images/tcam-mobile.png" alt="TraffickCam Mobile camera GUI" style="width:45%; float:right; margin:10px">
 
 TraffickCam Mobile is a crowdsourced data collection app available on the [App Store](https://apps.apple.com/mn/app/traffickcam/id1067713017?platform=iphone) & [Google Play](https://play.google.com/store/apps/details?id=com.exchangeinitiative.traffickcam&hl=en_US&gl=US&pli=1). It enables users to assist in the fight against human trafficking just by taking photos of the hotel room they're in.
 
