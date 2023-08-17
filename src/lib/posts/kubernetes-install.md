@@ -49,6 +49,8 @@ Section 3 of the doc [here](https://minikube.sigs.k8s.io/docs/start/) recommends
 alias kubectl="minikube kubectl --"
 ```
 
+I've gone ahead and done that to save some keystrokes.
+
 ## Viewing the dashboard:
 
 With the installataion complete, let's check out our new Kubernetes dashboard.
