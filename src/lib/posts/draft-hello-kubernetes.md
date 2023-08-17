@@ -6,10 +6,6 @@ categories:
 excerpt: My install experience with Kubernetes.
 ---
 
-<script>
-    import Callout from '$lib/components/Callout.svelte';
-</script>
-
 I've used Docker and Docker Compose to manage a static node with a bunch of services on it before in my time maintaining TraffickCam. I've also used it to train & deploy to our high-performance compute cluster (though we would eventually remove Docker from that workflow altogether due to the redundant/complex workflow of allocating GPUs with it).
 
 In any case, I've been curious about Kubernetes for a long time, so since I've got the time why not jump in and get started! I always start with new tech by following along with first-party learning materials, so I was pleased to find the official Kubernetes [tutorials](https://kubernetes.io/docs/tutorials/).
