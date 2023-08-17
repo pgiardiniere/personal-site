@@ -2,22 +2,21 @@
 title: "Hello, Kubernetes!"
 date: "2023-08-17"
 categories: 
-  - "microservices"
   - "kubernetes"
-excerpt: My experience taking first steps with Kubernetes.
+excerpt: My install experience with Kubernetes.
 ---
 
 <script>
     import Callout from '$lib/components/Callout.svelte';
 </script>
 
-I've used Docker and Docker Compose to manage a static node with a bunch of services on it before in my time maintaining TraffickCam. I've also used it to train & deploy to our high-performance compute cluster, though we would eventually remove Docker from that workflow.
+I've used Docker and Docker Compose to manage a static node with a bunch of services on it before in my time maintaining TraffickCam. I've also used it to train & deploy to our high-performance compute cluster (though we would eventually remove Docker from that workflow altogether due to the redundant/complex workflow of allocating GPUs with it).
 
-In any case, I've been curious about Kubernetes for a long time, so since I've got the time let's jump in and start learning it. I always start by following along with first-party learning materials, soI was pleased to find the official Kubernetes [tutorials](https://kubernetes.io/docs/tutorials/).
+In any case, I've been curious about Kubernetes for a long time, so since I've got the time why not jump in and get started! I always start with new tech by following along with first-party learning materials, so I was pleased to find the official Kubernetes [tutorials](https://kubernetes.io/docs/tutorials/).
 
-First lesson is [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/), but you must first install the prerequisite [minikube](https://minikube.sigs.k8s.io/docs/start/) and [kubectl](https://minikube.sigs.k8s.io/docs/start/). 
+First lesson is [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/), but you must first install the prerequisite packages [minikube](https://minikube.sigs.k8s.io/docs/start/) and [kubectl](https://minikube.sigs.k8s.io/docs/start/). 
 
-So today, let's just get those up and running on my local Ubuntu machine.
+So for today, let's just get those up and running on my local Ubuntu machine.
 
 ## Install:
 
@@ -58,11 +57,15 @@ alias kubectl="minikube kubectl --"
 
 With the installataion complete, let's check out our new Kubernetes dashboard.
 
-To check out the dashboard on localhost, you just run `minikube dashboard`, or `minicube dashboard --url` to get the url in your terminal:
-
 >**Note:**
 >
 >If you're ssh'd onto a different node within 
 your LAN, you'll need to perform some additional config to view the dashboard - specifically, you'll need to perform port forwarding. 
 >
 >If you're unfamiliar with it, you can do it from the command line by following [this thread](https://stackoverflow.com/questions/47173463/how-to-access-local-kubernetes-minikube-dashboard-remotely), or by allowing VS Code integrated terminal to attempt to detect and auto-forward it for you.
+
+To check out the dashboard on localhost, you just run `minikube dashboard`, or `minicube dashboard --url` to get the url in your terminal, and finally check your browser:
+
+![minikube dashboard](/images/hello-kubernetes-3.png)
+
+And that's it! Looks like we're up and running. Next time I'll resume work in [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/).
