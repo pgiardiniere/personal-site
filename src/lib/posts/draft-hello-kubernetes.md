@@ -42,17 +42,22 @@ Next you'll want to install `kubectl` so you can start issuing commands via the 
 
 We can then verify both the utilities are available as well as their versions:
 
-To check out the dashboard on localhost, you just run `minikube dashboard`, or `minicube dashboard --url` to get the url in your terminal.
+![minikube and kubectl version outputs](/images/hello-kubernetes-2.png)
+
+**Post-Install Config:**
+
+Section 3 of the doc [here](https://minikube.sigs.k8s.io/docs/start/) recommends that you add the following alias to your bash config: 
+
+
+## Hello Minikube!
+
+The installataion completed, we can now return to the [hello minicube](https://kubernetes.io/docs/tutorials/hello-minikube/) exercise and get to work!
+
+To check out the dashboard on localhost, you just run `minikube dashboard`, or `minicube dashboard --url` to get the url in your terminal:
 
 >**Note:**
 >
 >If you're ssh'd onto a different node within 
 your LAN, you'll need to perform some additional config to view the dashboard - specifically, you'll need to perform port forwarding. 
 >
->If you're unfamiliar with it, you can do it from the command line by following [this thread](https://stackoverflow.com/questions/47173463/how-to-access-local-kubernetes-minikube-dashboard-remotely) or by allowing VS Code integrated terminal to detect it, if you use that editor.
-
-Now, I'm actually ssh'd into a different machine on my home network to get this done, so I need to open that up
-
-## Minikube config:
-
-Section 3 of the doc [here](https://minikube.sigs.k8s.io/docs/start/) recommends that you configure  
+>If you're unfamiliar with it, you can do it from the command line by following [this thread](https://stackoverflow.com/questions/47173463/how-to-access-local-kubernetes-minikube-dashboard-remotely), or by allowing VS Code integrated terminal to attempt to detect and auto-forward it for you.
