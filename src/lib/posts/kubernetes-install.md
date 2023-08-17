@@ -1,5 +1,5 @@
 ---
-title: "Hello, Kubernetes!"
+title: "Installing Kubernetes"
 date: "2023-08-17"
 categories: 
   - "kubernetes"
