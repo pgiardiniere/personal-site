@@ -33,13 +33,13 @@ In my case, it complained that my user was not part of the docker group, an extr
 
 After taking care of that, we try `minikube start` again and verify it comes up:
 
-![terminal output of minikube start](/images/hello-kubernetes-1.png)
+![terminal output of minikube start](/images/kubernetes-install-1.png)
 
 Next you'll want to install `kubectl` so you can start issuing commands via the dedicated controller. Cut again back to its [install guide](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/), following the steps (and always verify your checksums!), or alternatively have minikube handle it by running the following: `minikube kubectl -- get po -A`.
 
 We can then verify both the utilities are available as well as their versions:
 
-![minikube and kubectl version outputs](/images/hello-kubernetes-2.png)
+![minikube and kubectl version outputs](/images/kubernetes-install-2.png)
 
 **Post-Install Config:**
 
@@ -62,6 +62,6 @@ your LAN, you'll need to perform some additional config to view the dashboard - 
 
 To check out the dashboard on localhost, you just run `minikube dashboard`, or `minicube dashboard --url` to get the url in your terminal, and finally check your browser:
 
-![minikube dashboard](/images/hello-kubernetes-3.png)
+![minikube dashboard](/images/kubernetes-install-3.png)
 
 And that's it! Looks like we're up and running. Next time I'll resume work in [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/).
