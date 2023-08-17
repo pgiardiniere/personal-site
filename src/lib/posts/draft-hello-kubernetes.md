@@ -21,7 +21,7 @@ Afterwards I'll keep following along with the rest of the official Kubernetes [t
 
 Fortunately, the install is fairly straightforward. First you grab minikube:
 
-```
+```bash
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
@@ -46,12 +46,15 @@ We can then verify both the utilities are available as well as their versions:
 
 **Post-Install Config:**
 
-Section 3 of the doc [here](https://minikube.sigs.k8s.io/docs/start/) recommends that you add the following alias to your bash config: 
+Section 3 of the doc [here](https://minikube.sigs.k8s.io/docs/start/) recommends that you add the following alias to your bash profile:
 
+```bash
+alias kubectl="minikube kubectl --"
+```
 
-## Hello Minikube!
+## Viewing the dashboard:
 
-The installataion completed, we can now return to the [hello minicube](https://kubernetes.io/docs/tutorials/hello-minikube/) exercise and get to work!
+With the installataion complete, let's check out our new Kubernetes dashboard.
 
 To check out the dashboard on localhost, you just run `minikube dashboard`, or `minicube dashboard --url` to get the url in your terminal:
 
