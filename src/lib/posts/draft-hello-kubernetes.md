@@ -11,11 +11,13 @@ excerpt: My experience taking first steps with Kubernetes.
     import Callout from '$lib/components/Callout.svelte';
 </script>
 
-I've used Docker and Docker Compose to manage a static node with a bunch of services on it before in my time maintaining TraffickCam. I've also used it when deploying models to our high-performance compute cluster, though we would eventually move away from that workflow.
+I've used Docker and Docker Compose to manage a static node with a bunch of services on it before in my time maintaining TraffickCam. I've also used it to train & deploy to our high-performance compute cluster, though we would eventually remove Docker from that workflow.
 
-I've been curious about Kubernetes for a long time, so since I've got the time let's jump in and start learning it. I'm following Kubernete's [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/) tutorial, after installing the prerequisite [minikube](https://minikube.sigs.k8s.io/docs/start/) and [kubectl](https://minikube.sigs.k8s.io/docs/start/) on my Ubuntu machine.
+In any case, I've been curious about Kubernetes for a long time, so since I've got the time let's jump in and start learning it. I always start by following along with first-party learning materials, soI was pleased to find the official Kubernetes [tutorials](https://kubernetes.io/docs/tutorials/).
 
-Afterwards I'll keep following along with the rest of the official Kubernetes [tutorials](https://kubernetes.io/docs/tutorials/).
+First lesson is [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/), but you must first install the prerequisite [minikube](https://minikube.sigs.k8s.io/docs/start/) and [kubectl](https://minikube.sigs.k8s.io/docs/start/). 
+
+So today, let's just get those up and running on my local Ubuntu machine.
 
 ## Install:
 
