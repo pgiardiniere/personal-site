@@ -63,7 +63,7 @@ your LAN, you'll need to perform some additional config to view the dashboard - 
 >
 >If you're unfamiliar with it, you can do it from the command line by following [this thread](https://stackoverflow.com/questions/47173463/how-to-access-local-kubernetes-minikube-dashboard-remotely), or by allowing VS Code integrated terminal to attempt to detect and auto-forward it for you.
 
-To check out the dashboard on localhost, you just run `minikube dashboard`, or `minicube dashboard --url` to get the url in your terminal, and finally check your browser:
+To check out the dashboard on localhost, you just run `minikube dashboard`, or `minikube dashboard --url` to get the url in your terminal, and finally check your browser:
 
 ![minikube dashboard](/images/kubernetes-install-3.png)
 
