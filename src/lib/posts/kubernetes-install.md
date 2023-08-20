@@ -1,6 +1,7 @@
 ---
 title: "Installing Kubernetes"
 date: "2023-08-17"
+updated: "2023-08-19"
 categories: 
   - "kubernetes"
 excerpt: My install experience with Kubernetes.
@@ -10,7 +11,7 @@ I've used Docker and Docker Compose to manage a static node with a bunch of serv
 
 In any case, I've been curious about Kubernetes for a long time, so since I've got the time why not jump in and get started! I always start with new tech by following along with first-party learning materials, so I was pleased to find the official Kubernetes [tutorials](https://kubernetes.io/docs/tutorials/).
 
-First lesson is [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/), but you must first install the prerequisite packages [minikube](https://minikube.sigs.k8s.io/docs/start/) and [kubectl](https://minikube.sigs.k8s.io/docs/start/). 
+First lesson is [hello minikube](https://kubernetes.io/docs/tutorials/hello-minikube/), but you must first install the prerequisite packages [minikube](https://minikube.sigs.k8s.io/docs/start/) and [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl). 
 
 So for today, let's just get those up and running on my local Ubuntu machine.
 
