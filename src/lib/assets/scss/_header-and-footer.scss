@@ -33,11 +33,15 @@ footer {
 }
 
 header {
-	background: var(--lightAccent);
-	color: var(--darker);
+	background: var(--darker);
+	color: var(--paper);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	a {
+		color: inherit;
+	}
 
 	@media (min-width: vars.$smMin) {
 		justify-content: center;
