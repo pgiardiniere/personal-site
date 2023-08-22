@@ -90,4 +90,4 @@ For now, just know that they're fundamentally the same idea - reducing JS down t
 
 ---
 
-That does it for this post - expect to see more updates to the site soon. I'm currently in the process of porting blog posts for past projects here. Once some of the backlog is ported in, expect to see all-new content as well as updates to the site itself. The changes will all be covered here in the blog, so stay tuned for more!
+That does it for this post - expect to see all-new blog content soon, as well as updates to the site itself.
