@@ -9,7 +9,7 @@ excerpt: This post details initial release of website - why it exists and how it
 ---
 
 <script>
-	import Callout from '$lib/components/Callout.svelte';
+	import Info from '$lib/components/Info.svelte';
 
   import Katex from "$lib/components/Katex.svelte"
 
@@ -48,14 +48,14 @@ Since these markdown files include Svelte markup escapes & custom functionality,
 
 Since SvelteKit 1.0's release, you [cannot configure the compiler to ignore routes](https://stackoverflow.com/a/69457826), so ultimately I wrote a solution outside the framework just utilizing nodejs to move the files around before builds and hooked it straight into my package.json to ensure it doesn't require additional thought. You can read more about the implementation [here](https://github.com/pgiardiniere/personal-site/blob/main/drafts/README.md) if you're interested.
 
-<Callout>
+<Info>
 
 **Hosting Provider Note**: If you're using [Cloudflare Pages](https://developers.cloudflare.com/pages) or another similar hosting provider (Netlify, Vercel, etc.) then you might already have something similar to this functionality provided for you. For cloudflare, it's referred to as [preview deployments](https://developers.cloudflare.com/pages/platform/preview-deployments/) and it integrates directly with your Git workflow.
 
 Ultimately, I just don't find this workflow to be as ergonomic as the one I've made - branch switching for drafts and managing PRs increases cognitive overhead, which decreases the occasions I'll use to write.
 
 Your hosting provder likely integrates with git master channel, where new commits to master trigger the provider to run a new `build` command. Since we've extended `build` with the draft movement script, we can be sure that Cloudflare does not publish unfinished pages for us. I haven't tested with other providers, so your mileage may vary.
-</Callout>
+</Info>
 
 ## Publishing to Cloudflare Pages
 
@@ -76,15 +76,14 @@ Since this site is composed entirely of static content (i.e. for a given page, t
 
 And since the `static` adapter supports this fully out of the box, it ultimately wound up being better to just use it and configure Cloudflare to recognize it, rather than use the `cloudflare` adapter and configure Svelte to turn off all SSR functionality.
 
-<Callout>
-<b>Server Rendering Note:</b> 
+<Info>
 
-You might have noticed that SSR and SSG are simply two different intervals/strategies for doing the same thing - building (i.e. server-rendering) javascript into a bundle of HTML and (less) javascript. To avoid overloading the term *rendering*, when a static generation strategy is used, you will often see term *prerendering* used instead from the Svelte/SvelteKit docs. (In contrast, NextJS uses *prerendering* in [both contexts](https://nextjs.org/learn/foundations/how-nextjs-works/rendering)).
+**Note:** You might have noticed that SSR and SSG are simply two different intervals/strategies for doing the same thing - building (i.e. server-rendering) javascript into a bundle of HTML and (less) javascript. To avoid overloading the term *rendering*, when a static generation strategy is used, you will often see term *prerendering* used instead from the Svelte/SvelteKit docs. (In contrast, NextJS uses *prerendering* in [both contexts](https://nextjs.org/learn/foundations/how-nextjs-works/rendering)).
 
 For now, just know that they're fundamentally the same idea - reducing JS down to HTML and (less) JS _before_ you fulfill the client request.
 
 <b><em>Why bother?</em></b> Server-rendering generally is an advancement over the old status quo of React SPAs (single page application), where shipping the entire application in JS over an effectively empty HTML mule was the norm. This strategy still has uses today, but has slow initial Time-to-Load (TTL) due to large quantity of JS being shipped, and the JS having to build the 'actual' request UI after the DOM indicates the HTML page load is in a ready state (after which hydration can finally occur). As you might guess, placing the page contents behind a JS rebuild hurts SEO, since the HTML on its own shares very little useful information about the page. There's a lot more to the discussion than this, but these are some useful starting points.
-</Callout>
+</Info>
 
 ## Up Next
 
