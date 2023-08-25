@@ -7,7 +7,7 @@ categories:
 excerpt: Kubernetes guides continues.
 ---
 
-Following the [install post](/blog/kubernetes-install), I'm now continuing through the guides with [hello-minikube]. It's a short affair, very little explanation beyond just running some of basic commands, so let's get right to it.
+Following the [install post](/blog/kubernetes-install), I'm now continuing through the guides with [hello-minikube](). It's a short affair, very little explanation beyond just running some of basic commands, so let's get right to it.
 
 The first bit is easy, until you create a service using kubectl's `expose deployment` command, at which point we have an issue where I'm unable to access the cluster 
 
@@ -25,5 +25,4 @@ Sure enough, this is rhyming with my experience administering docker services, w
 
 ![remote node](/images/hello-minikube-2.png)
 
-As a temporary workaround, I'll just work with this from my Windows machine instead of on the (preferred) Ubuntu box `pc2`. I much prefer working directly on linux for these sorts of things, so I'll have to figure that out shortly.
-
+Likely it's just a result of default Kubernetes virutal network environment config. As a temporary workaround, I'll just work with this from my Windows machine instead of on the (preferred) Ubuntu box `pc2`. There's plenty of time to get those particulars sorted out later on.
