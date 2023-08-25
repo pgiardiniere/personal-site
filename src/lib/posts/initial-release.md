@@ -36,7 +36,7 @@ You can't use it directly within markdown - you must escape to Svelte markup on 
 
 It's still a pleasant experience despite the workaround. For instance, here's the function for a Softmax classifier (i.e. Multiclass Cross-Entropy classifier, if you prefer) as given [here](https://cs231n.github.io/linear-classify/#softmax-classifier) in Stanford's CNNs for Computer Vision materials.
 
-<p><Katex displayMode math={softmax}></Katex></p>
+<Katex displayMode math={softmax}></Katex>
 
 It would have been nice to be able to use `$` and `$$` syntax directly in markdown (the same worfklow as in Jupyterlab) but MDSveX doesn't support it, and the other folks in the community I've seen attempt to integrate syntax like it haven't come up with a cleaner solution as of yet.
 
