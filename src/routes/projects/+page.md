@@ -30,7 +30,7 @@ Partners prepare images by hiding sensitive areas and sending the search request
 * Overhauled API service architecture to promote service cohesion and reduce coupling, resulting in:
   * Reduced image query times by ~10%.
   * Reduced API startup times by ~50%.
-  * Increased service observability, by ensuring certain failures could no longer impact logging.
+  * Increased service observability, by ensuring certain failures could not impact logging.
 * Dramatically reduced 3rd party dependencies installed to API environment, improving developer experience and reducing attack surface.
 * Performed production app server and database migration, many server updates & software updates, etc.
 * Completely rewrote all project documentation, greatly increasing coverage, accuracy, and consistency.
