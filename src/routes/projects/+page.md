@@ -8,23 +8,23 @@
 
 # TraffickCam
 
-I was the project's Mobile Developer for 1 year, and then Lead Developer for 2 years. I was entrusted with ownership of all production systems, including: Search, Mobile, the Search API, and more.
+I worked on the [TraffickCam project](http://traffickcam.org/about) for 3 years. TraffickCam prevents human trafficking by applying state-of-the-art computer vision techniques to a unique dataset of hotel room images, in partnership with the [National Center for Missing Exploited Children](https://www.missingkids.org/home) and collaborators from multiple universities.
 
-## TraffickCam Search/API
+I was the Mobile Developer for 1 year, and then Lead Developer for 2 years. I was entrusted with ownership of all production systems, including: Search, Mobile, the Search API, and more.
 
-**TraffickCam Search** is the web search app used by partner investigators.
+## TraffickCam Search
 
-**TraffickCam API** is the service-based API which hosts the advanced computer vision models that enable search.
+TraffickCam Search is the search web app used by partner investigators. It's powered by an internal API that hosts the computer vision models.
 
 <Info>
-<b> Note:</b> TraffickCam API also hosts the image submission endpoint for the mobile app, among other responsibilities.
+<b> Note:</b> The API also hosts the image submission endpoint for the mobile app, among other responsibilities.
 </Info>
 
 #### How it works
 
-Investigators prepare an image by masking sensitive regions, then submitting it together with optional text & geographical boundaries.
+Partner investigators prepare an image by masking sensitive regions, then submitting it together with optional text & geographical boundaries.
 
-Our API receives the request, infills the masked image regions using an off-the-shelf model, and submits those infilled images to the in-house retrieval model for evaluation. This model is pretrained on a proprietary hotel room dataset, and during evaluation it embeds the new image into a feature vector on which similarity search is performed. It responds to the query with the most similar hotel room images found (restricted by any submitted geographical filters) and returns a list of results, where users can see other images from that room together with the exact hotel location and other useful information.
+The API receives the request, infills the masked image regions using an off-the-shelf model, and submits those infilled images to the in-house retrieval model for evaluation. This model is pretrained on a proprietary hotel room dataset, and during evaluation it embeds the new image into a feature vector on which similarity search is performed. It responds to the query with the most similar hotel room images found (restricted by any submitted geographical filters) and returns a list of results, where users can see other images from that room together with the exact hotel location and other useful information.
 
 #### Major Contributions
 
