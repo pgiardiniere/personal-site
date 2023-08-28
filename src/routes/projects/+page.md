@@ -35,7 +35,7 @@ Our API receives the request, infills the masked image regions using an off-the-
   * Increased service observability, by ensuring certain failures could no longer impact logging.
 * Dramatically reduced 3rd party dependencies installed to API environment, improving developer experience and reducing attack surface.
 * Performed production app server and database migration, many server updates & software updates, etc.
-* Completely rewrote all project documentation, greatly increasing accuracy, consistency, and coverage.
+* Completely rewrote all project documentation, greatly increasing coverage, accuracy, and consistency.
 
 
 ## TraffickCam Mobile
