@@ -11,7 +11,7 @@ I'm a software developer with a passion for writing performant, maintainable Mac
 
 I specialize in ML DevOps, ensuring smooth deployment and continuous availability of production models and APIs, guaranteeing optimal performance for AI systems.
 <br>
-I also develop UIs which enable deep, insightful AI experiences on both web and mobile platforms.
+I also create UIs which enable deep, insightful AI experiences on both web and mobile platforms.
 </h4>
 
 <br>
