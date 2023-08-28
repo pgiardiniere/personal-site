@@ -22,7 +22,7 @@ TraffickCam Search is the search web app used by partner investigators. It's pow
 
 #### How it works
 
-Partners prepare images by hiding sensitive areas and sending the search request. The API receives this request and fills in the hidden parts of the image using an off-the-shelf model. These infilled images are sent to an in-house model for evaluation. This model has been trained on a special dataset of hotel room images, and during evaluation, it embeds the new image into a feature vector for similarity comparison. Finally, the API responds to the request with a list of results - the most similar hotel room images it finds. Partners can view other images from that room along with precise hotel details right in the search app.
+Partners prepare images by hiding sensitive areas and sending the search request. The API receives this request and fills in the hidden parts of the image using an off-the-shelf model. These infilled images are sent to an in-house model for evaluation. This model has been trained on a special dataset of hotel room images, and during evaluation, it embeds the new image into a feature vector for similarity comparison. Finally, the API responds to the request with a list of results - the most similar hotel room images it found. From any result, partners can view other images from that room and precise hotel details, all inside the search results page.
 
 #### Major Contributions
 
