@@ -1,7 +1,7 @@
 ---
 title: "Hello Minikube"
-date: "2023-08-19"
-updated: "2023-08-19"
+date: "2023-08-28"
+updated: "2023-08-28"
 categories: 
   - "kubernetes"
 excerpt: Continuation of Kubernetes guides.
