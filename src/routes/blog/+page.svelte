@@ -8,7 +8,7 @@
 
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Pete Giardiniere | Blog</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 

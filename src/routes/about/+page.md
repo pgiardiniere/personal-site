@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About</title>
+	<title>Pete Giardiniere | About</title>
 </svelte:head>
 
 # About Me

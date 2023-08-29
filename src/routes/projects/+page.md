@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Projects</title>
+	<title>Pete Giardiniere | Projects</title>
 </svelte:head>
 
 <script>
