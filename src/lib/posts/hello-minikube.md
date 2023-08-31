@@ -42,7 +42,9 @@ kubectl get pods --namespace=kubernetes-dashboard
 kubectl proxy --address 0.0.0.0 kubernetes-dashboard-<pod-name> 8001:80 --namespace=kubernetes-dashboard --disable-filter=true
 ```
 
-Recall that opening it to external 0.0.0.0 is necessary as kubectl is running inside your minikube VM, which has its own private network distinct from the host. This access opens your cluster to its physical host, to get other nodes to access this socket you just configure the networking as normal.
+Recall that opening it to external 0.0.0.0 is necessary as kubectl is running inside your minikube VM, which has its own private network distinct from the host. 
+
+This access opens your cluster to its physical host, to get other nodes to access this socket you just configure the networking as normal. Be aware you would _absolutley not_ want to open this beyond LAN.
 </Info>
 
 Once you do that, there's not much else to it other than running the commands as they're presented to you. If you've worked with Docker Compose or other container/vm orchestration software before it should be pretty familiar. 
