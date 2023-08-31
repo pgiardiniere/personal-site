@@ -1,11 +1,15 @@
 ---
 title: "Hello Minikube"
 date: "2023-08-28"
-updated: "2023-08-28"
+updated: "2023-08-31"
 categories: 
   - "kubernetes"
 excerpt: Continuation of Kubernetes guides.
 ---
+
+<script>
+  import Info from '$lib/components/Info.svelte'
+</script>
 
 Following the [install post](/blog/kubernetes-install), I'm now continuing through the guides with [hello-minikube](https://kubernetes.io/docs/tutorials/hello-minikube/). It's a short affair, very little explanation beyond just running some of basic commands, so let's get right to it.
 
@@ -27,4 +31,18 @@ Sure enough, this is rhyming with my experience administering docker services, w
 
 Likely it's just a result of default Kubernetes virutal network environment config. As a temporary workaround, I'll just work with this from my Windows machine instead of on the (preferred) Ubuntu box `pc2`. There's plenty of time to get those particulars sorted out later on.
 
-Once you do that, there's not much else to it other than running the commands as they're presented to you. If you've worked with Docker Compose or other container/vm orchestration software before it should be pretty familiar.
+<Info>
+
+**EDIT:** This was as simple as I thought, see [this tip](http://blog.data-alchemy.org/tips/remote-minikube/). You get the pod name, then you proxy into it for any external IP on whichever port you want (here, 8001).
+
+```
+# Gets the pod name
+kubectl get pods --namespace=kubernetes-dashboard
+
+kubectl proxy --address 0.0.0.0 kubernetes-dashboard-<pod-name> 8001:80 --namespace=kubernetes-dashboard --disable-filter=true
+```
+
+Recall that opening it to external 0.0.0.0 is necessary as kubectl is running inside your minikube VM, which has its own private network distinct from the host.
+</Info>
+
+Once you do that, there's not much else to it other than running the commands as they're presented to you. If you've worked with Docker Compose or other container/vm orchestration software before it should be pretty familiar. 
