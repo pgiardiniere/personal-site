@@ -33,7 +33,7 @@ Likely it's just a result of default Kubernetes virutal network environment conf
 
 <Info>
 
-**EDIT:** This was as simple as I thought, see [this tip](http://blog.data-alchemy.org/tips/remote-minikube/). You get the pod name, then you proxy into it for any external IP on whichever port you want (here, 8001).
+**EDIT:** This was as simple as I thought, see [this tip](http://blog.data-alchemy.org/tips/remote-minikube/). You get the pod name, then you proxy into it for external IPs on whichever port you want (here, 8001).
 
 ```
 # Gets the pod name
@@ -42,7 +42,7 @@ kubectl get pods --namespace=kubernetes-dashboard
 kubectl proxy --address 0.0.0.0 kubernetes-dashboard-<pod-name> 8001:80 --namespace=kubernetes-dashboard --disable-filter=true
 ```
 
-Recall that opening it to external 0.0.0.0 is necessary as kubectl is running inside your minikube VM, which has its own private network distinct from the host.
+Recall that opening it to external 0.0.0.0 is necessary as kubectl is running inside your minikube VM, which has its own private network distinct from the host. This access opens your cluster to its physical host, to get other nodes to access this socket you just configure the networking as normal.
 </Info>
 
 Once you do that, there's not much else to it other than running the commands as they're presented to you. If you've worked with Docker Compose or other container/vm orchestration software before it should be pretty familiar. 
