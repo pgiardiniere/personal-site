@@ -7,7 +7,7 @@ categories:
 excerpt: Continuation of Kubernetes guides.
 ---
 
-Following the [install post](/blog/kubernetes-install), I'm now continuing through the guides with [hello-minikube](). It's a short affair, very little explanation beyond just running some of basic commands, so let's get right to it.
+Following the [install post](/blog/kubernetes-install), I'm now continuing through the guides with [hello-minikube](https://kubernetes.io/docs/tutorials/hello-minikube/). It's a short affair, very little explanation beyond just running some of basic commands, so let's get right to it.
 
 The first bit is easy, until you create a service using kubectl's `expose deployment` command, at which point we have an issue where I'm unable to access the cluster 
 
