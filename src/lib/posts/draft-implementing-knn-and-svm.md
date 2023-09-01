@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "Computer Vision"
-excerpt: None
+excerpt: The first post in the archives - the one which began my journey on getting current with the computer vision literature.
 ---
 
 <script>
