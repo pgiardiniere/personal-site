@@ -1,7 +1,7 @@
 ---
 title: "Archive: More with fully-connected nets"
 date: "2021-04-15"
-updated: ""
+updated: "2023-09-02"
 categories:
   - "archives"
   - "cs231n"
