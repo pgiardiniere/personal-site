@@ -1,5 +1,5 @@
 ---
-title: "Softmax Classifier"
+title: "Archive: Softmax classifier"
 date: "2021-04-01"
 updated: "2023-09-01"
 categories:
@@ -22,9 +22,12 @@ excerpt: On writing a softmax classifier on CIFAR-10 using numpy.
 
 <Info>
 
-**Note:** This is an archived post from April 1st, 2021. Any new comments will be made exclusively in info boxes like this one.
+**Note:** Originally posted April 1st, 2021, this is post <Katex math="2/20"/> in the archived Deep Learning for Computer Vision series (cs231n). 
+* Browse the full [cs231n series](http://pc2:5173/blog/category/cs231n).
+* The code is available [here](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/softmax.ipynb)
 
-The code is available [here](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/softmax.ipynb).
+
+New notes are found exclusively in info boxes like this one.
 
 </Info>
 
