@@ -27,7 +27,7 @@ excerpt:
 
 **Note:** Originally posted April 12th, 2021, this is post <Katex math="4/20"/> in the archived Deep Learning for Computer Vision series (cs231n).
 * Browse the full [cs231n series](http://pc2:5173/blog/category/cs231n).
-* See the source code in the [BLANK]() and [BLANK]() notebooks.
+* See the source code in the [features](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/features.ipynb) and [FullyConnectedNets](https://github.com/pgiardiniere/cs231n/blob/main/assignment2/FullyConnectedNets.ipynb) notebooks.
 
 New comments are found exclusively in info boxes like this one.
 
@@ -55,6 +55,10 @@ So in cifar-10, raw input for a given sample is just that image's pixel values. 
 
 ## Fully-Connected Neural Nets
 
-The second assignment starts off by having students perform a thorough refactor on the two-layer neural net produced as part of assignment 1. Importantly, by abstracting the individual layers themselves and their connection points, the student develops an API which can conveniently create fully connected nets of arbitrary depth. Another thing done while refactoring is separating out the training logic in the form of a Solver class from the net (model) itself. This API decision allots the programmer convenient alternate optimization methods to call without meddling inside the model code.
+The second assignment starts off by having students perform a thorough refactor on the two-layer neural net produced as part of assignment 1. Importantly, by abstracting the individual layers themselves and their connection points, the student develops an API which can conveniently create fully connected nets of arbitrary depth. Another thing done while refactoring is separating out the training logic in the form of a Solver class from the net (model) itself. This design decision gives the developer a convenient way to change your training optimization method without directly changing the model code.
 
-I have completed the refactoring steps and verified they're correct. The assignment has students do this by creating another 2-layer neural net as in the first assignment using the API they've (partially) created. Much like the first assignment, I get nets with ~51% accuracy. Here's a visualization of the training process for a given model:
+I completed these refactoring steps and verified they're correct. The assignment has students do this by creating another 2-layer neural net as in the first assignment using the API they've (partially) created. Much like the first assignment, I get nets with ~51% accuracy. Here's a visualization of the training process for a given model:
+
+![Loss and Accuracy plots](/images/feature-extraction-and-fc-screenshot439.png)
+
+**Todo:** A2:Q1 has a few remaining pieces. First students create 3-layer and 5-layer fc-nets in similarly to the 2-layer net. Then the assignment changes direction to focus on new optimization schemes (SGD+momentum, RMSProp, Adam).
