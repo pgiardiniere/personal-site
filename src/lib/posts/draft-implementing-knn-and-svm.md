@@ -19,7 +19,7 @@ excerpt: The first post in the archives - the one which began my journey on gett
 **Note:** Originally published March 26th, 2021, this is post <Katex math="1/20"/> in the archived Deep Learning for Computer Vision series.
 
 * Browse the full [cs231n series](http://pc2:5173/blog/category/cs231n).
-* The code is available [here](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/softmax.ipynb).
+* See the source code in the [knn](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/knn.ipynb) and [svm](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/svm.ipynb) notebooks.
 
 New comments will be made exclusively in info boxes like this one.
 
