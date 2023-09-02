@@ -58,12 +58,12 @@ We need an applicable gradient, but this time the cs231n notes aren't giving me 
 Hence they each simplify down to familiar-ish results. From to Eli's Blog:
 
 <img src="/images/softmax-classification-1.png" 
-style="width:65%; display:block; margin:auto;">
+alt="Gradient derivation math" style="width:65%; display:block; margin:auto;">
 
 Where <Katex math="S_i"/> denotes the Softmax vector, and
 
 <img src="/images/softmax-classification-2.png" 
-style="width:40%; display:block; margin:auto;">
+alt="partial derivative notation" style="width:40%; display:block; margin:auto;">
 
 Once you implement this in code, the rest of the exercise is effectively identical to the SVM one, so I won't repeat myself covering the steps to complete it.
 
