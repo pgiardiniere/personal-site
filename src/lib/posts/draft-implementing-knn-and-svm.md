@@ -1,6 +1,6 @@
 ---
-title: "Implementing KNN and Support Vector Machines"
-date: "2023-08-31"
+title: "Archive: Implementing KNN and Support Vector Machine classifiers"
+date: "2021-03-26"
 updated: "2023-08-31"
 categories:
   - "archives"
@@ -16,9 +16,13 @@ excerpt: The first post in the archives - the one which began my journey on gett
 
 <Info>
 
-**Note:** This is an archived post, originally from March 26th, 2021.
+**Note:** Originally published March 26th, 2021, this is post <Katex math="1/20"/> in the archived Deep Learning for Computer Vision series.
 
-This marks the beginning of my journey getting up-to-date on the literature for deep learning in computer vision.
+* Browse the full [cs231n series](http://pc2:5173/blog/category/cs231n).
+* The code is available [here](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/softmax.ipynb).
+
+New comments will be made exclusively in info boxes like this one.
+
 </Info>
 
 
@@ -42,7 +46,7 @@ Essentially, in the assignment they've shipped you code which already loads in t
 
 The assignment asks the student to implement naive (i.e. non-vectorized) and vectorized SVM by filling in both required pieces.
 
-### 1) Gradient computation w/ regularization term
+#### 1) Gradient computation w/ regularization term
 
 In the [gradcompute notes](https://cs231n.github.io/optimization-1/#gradcompute) the authors make a distinction between so-called Analytical and Numerical gradient computation. Analytical is calculus-based (so, a 'real' gradient), where Numerical involves merely storing observed distance over a very small (but finite) interval to get direction. They give pros/cons of each, a code sample containing non-vectorized Numerical gradient, and in the assignment ask you implement Analytic gradient (to later double-check using an Numerical gradient).
 
