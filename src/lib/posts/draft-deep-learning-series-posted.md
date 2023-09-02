@@ -10,7 +10,9 @@ categories:
 excerpt: An announcement that the computer vision content has all been posted, together with some reflection on the work generally and ____.
 ---
 
-Definitely there are signs these are my first steps into machine learning / computer vision spaces. I left many free-answser questions blank that today I'd consider total freebies (e.g. yes, Sigmoid is worse for gradient flow than ReLU/Leaky-ReLU). 
+Definitely there are signs these are my first steps into machine learning / computer vision spaces. 
+
+Since I was writing blogs about completing these assignments, I left most free-answer questions blank, despite many being total freebies. I often address them in the posts in some way.
 
 I did this all before starting the graduate program, which would fill some of the gaps.
 
