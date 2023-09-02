@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "Deep Learning"
-  - "Computer Vision"
+  - "computer-vision"
 excerpt: An announcement that the computer vision content has all been posted, together with some reflection on the work generally and ____.
 ---
 

@@ -5,7 +5,7 @@ updated: "2023-08-31"
 categories:
   - "archives"
   - "cs231n"
-  - "Computer Vision"
+  - "computer-vision"
 excerpt: The first post in the archives - the one which began my journey on getting current with the computer vision literature.
 ---
 

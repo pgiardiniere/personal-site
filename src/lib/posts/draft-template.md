@@ -5,7 +5,7 @@ updated: ""
 categories:
   - "archives"
   - "cs231n"
-  - "Computer Vision"
+  - "computer-vision"
 excerpt: None
 ---
 
