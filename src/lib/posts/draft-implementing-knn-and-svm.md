@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "computer-vision"
-excerpt: The first post in the archives - the one which began my journey on getting current with the computer vision literature.
+excerpt: The first post in the deep learning series, this marks the beginning of my journey to get up to speed with the latest computer vision literature.
 ---
 
 <script>

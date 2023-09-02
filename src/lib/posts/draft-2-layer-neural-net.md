@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "computer-vision"
-excerpt: None
+excerpt: How I made my first neural network to perform image classification on CIFAR-10.
 ---
 
 <script>

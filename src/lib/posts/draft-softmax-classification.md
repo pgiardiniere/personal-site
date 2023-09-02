@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "computer-vision"
-excerpt: On writing a softmax classifier on CIFAR-10 using numpy.
+excerpt: How I derived and developed a linear softmax classifier on the CIFAR-10 dataset.
 ---
 
 <script>

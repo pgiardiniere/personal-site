@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "computer-vision"
-excerpt: 
+excerpt: First steps with feature extraction, followed by making a reusable neural network interface which loosely mirrors PyTorch's design.
 ---
 
 <script>

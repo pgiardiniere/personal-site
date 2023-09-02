@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "computer-vision"
-excerpt: None
+excerpt: Implementing dropout and batch norm to make training models easier and improve their evaluation performance.  
 ---
 
 <script>

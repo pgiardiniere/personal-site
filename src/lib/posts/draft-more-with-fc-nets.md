@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "computer-vision"
-excerpt: None
+excerpt: Expanding the PyTorch-inspired neural net programming interface to accept arbitrary model shapes and additional training optimization schemes.
 ---
 
 <script>
