@@ -16,7 +16,7 @@ excerpt: The first post in the deep learning series, this marks the beginning of
 
 <Info>
 
-**Note:** Originally published March 26th, 2021, this is post <Katex math="1/20"/> in the archived Deep Learning for Computer Vision series.
+**Note:** Originally published March 26th, 2021, this is post <Katex math="1"/> in the archived Deep Learning for Computer Vision series.
 
 * Browse the full [cs231n series](/blog/category/cs231n).
 * See the source code in the [knn](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/knn.ipynb) and [svm](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/svm.ipynb) notebooks.

@@ -16,7 +16,7 @@ excerpt: How I made my first neural network to perform image classification on C
 
 <Info>
 
-**Note:** Originally posted April 7th, 2021, this is post <Katex math="3/20"/> in the archived Deep Learning for Computer Vision series (cs231n).
+**Note:** Originally posted April 7th, 2021, this is post <Katex math="3"/> in the archived Deep Learning for Computer Vision series (cs231n).
 
 * Browse the full [cs231n series](/blog/category/cs231n).
 * See the source code in the [two layer net](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/softmax.ipynb) notebook.

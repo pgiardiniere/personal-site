@@ -16,7 +16,7 @@ excerpt: Implementing dropout and batch norm to make training models easier and 
 
 <Info>
 
-**Note:** Originally posted April 21st, 2021, this is post <Katex math="6/20"/> in the archived Deep Learning for Computer Vision series (cs231n). 
+**Note:** Originally posted April 21st, 2021, this is post <Katex math="6"/> in the archived Deep Learning for Computer Vision series (cs231n). 
 * Browse the full [cs231n series](/blog/category/cs231n).
 * See the source code in the [Dropout](https://github.com/pgiardiniere/cs231n/blob/main/assignment2/Dropout.ipynb) and [BatchNormalization](https://github.com/pgiardiniere/cs231n/blob/main/assignment2/BatchNormalization.ipynb) notebooks.
 

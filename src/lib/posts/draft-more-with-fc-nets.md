@@ -16,7 +16,7 @@ excerpt: Expanding the PyTorch-inspired neural net programming interface to acce
 
 <Info>
 
-**Note:** Originally posted April 15th, 2021, this is post <Katex math="5/20"/> in the archived Deep Learning for Computer Vision series (cs231n).
+**Note:** Originally posted April 15th, 2021, this is post <Katex math="5"/> in the archived Deep Learning for Computer Vision series (cs231n).
 * Browse the full [cs231n series](/blog/category/cs231n).
 * See the source code in the [FullyConnectedNets](https://github.com/pgiardiniere/cs231n/blob/main/assignment2/FullyConnectedNets.ipynb) notebook.
 

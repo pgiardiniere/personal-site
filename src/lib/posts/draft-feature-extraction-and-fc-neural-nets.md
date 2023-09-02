@@ -25,7 +25,7 @@ excerpt: First steps with feature extraction, followed by making a reusable neur
 
 <Info>
 
-**Note:** Originally posted April 12th, 2021, this is post <Katex math="4/20"/> in the archived Deep Learning for Computer Vision series (cs231n).
+**Note:** Originally posted April 12th, 2021, this is post <Katex math="4"/> in the archived Deep Learning for Computer Vision series (cs231n).
 * Browse the full [cs231n series](/blog/category/cs231n).
 * See the source code in the [features](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/features.ipynb) and [FullyConnectedNets](https://github.com/pgiardiniere/cs231n/blob/main/assignment2/FullyConnectedNets.ipynb) notebooks.
 
