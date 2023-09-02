@@ -27,7 +27,7 @@ excerpt: On writing a softmax classifier on CIFAR-10 using numpy.
 * Browse the full [cs231n series](http://pc2:5173/blog/category/cs231n).
 * See the source code in the [softmax](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/softmax.ipynb) notebook.
 
-New notes are found exclusively in info boxes like this one.
+New comments are found exclusively in info boxes like this one.
 
 </Info>
 

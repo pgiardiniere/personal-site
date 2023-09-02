@@ -21,7 +21,7 @@ excerpt: The first post in the archives - the one which began my journey on gett
 * Browse the full [cs231n series](http://pc2:5173/blog/category/cs231n).
 * See the source code in the [knn](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/knn.ipynb) and [svm](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/svm.ipynb) notebooks.
 
-New comments will be made exclusively in info boxes like this one.
+New comments are found exclusively in info boxes like this one.
 
 </Info>
 
