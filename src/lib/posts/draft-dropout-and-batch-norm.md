@@ -46,12 +46,16 @@ Inverted dropout is a functionally equivalent to the vanilla dropout implmentati
 ## Batch Normalization:
 ---
 
-**Batch normalization** is a straightforward procedure to describe - during training, after the affine transform is applied at each layer, you calculate the mean and standard deviation (μ, σ) of each feature in the output batch, then use those values to normalize the batch such that the data are centered at 0 with standard deviation of 1. This should feel familiar, since you're generally doing this as a preprocessing step on raw data before inputting it to your model's first layer - except now it's being used between each layer. Another difference is that we choose some β and γ to re-center/re-spread the batch around. Finally, the current layer's μ, σ are added to the running average/stddev (each scaled by a momentum factor). The running stats are used in Test instead of layer-specific ones - and then transformed by the same β, γ.
+**Batch normalization** is a straightforward procedure to describe - during training, after the affine transform is applied at each layer, you calculate the mean and standard deviation <Katex math="(\mu, \sigma)" /> of each feature in the output batch, then use those values to normalize the batch such that the data are centered at 0 with standard deviation of 1. This should feel familiar, since you're generally doing this as a preprocessing step on raw data before inputting it to your model's first layer - except now it's being used between each layer. Another difference is that we choose some <Katex math="\beta"/> and <Katex math="\lambda"/> to adjust the center and spread of the batch, respectively. Finally, the current layer's <Katex math="\mu, \sigma"/> are added to the overall running average and stddev (which are each scaled by a momentum factor). The running stats are used in Test instead of layer-specific ones - and then transformed by the same <Katex math="\beta, \lambda"/>.
 
-By re-distributing about the β, γ we choose, we can speculate why the relative frequency of Dropout can be considerably reduced (or tossed altogether) when combined with batch normalization. It's possibly because we already have control of the relative frequency of dropped activations - e.g. by leaving the data zero-centered (β=0, γ=any), we expect 50% of samples to be negative, and get dropped by the activation function. This also ensures we stay away from the saturation points (outer edges) of the activation function which helps mitigate the likelihood of exploding/vanishing gradients.
+By re-distributing about the <Katex math="\beta, \lambda"/> we choose, we can speculate why the relative frequency of Dropout can be considerably reduced (or tossed altogether) when combined with batch normalization. It's possibly because we already have control of the relative frequency of dropped activations - for example, setting <Katex math="\beta=0"/> leaves the data zero-centered, so we expect 50% of the scores to be negative and get dropped by the activation function. This also ensures we stay away from the saturation points (outer edges) of the activation function which helps mitigate the likelihood of exploding/vanishing gradients.
 
 
-Benefits: As mentioned, we've reduced the occurrence of unstable gradients. From this, it follows that our models can tolerate a wider range of hyperparameter settings - e.g. larger learning rates, or different weight initialization schemes. As per Ioffe & Szegedy's original findings, model accuracy tends to increase as well.
+**Benefits:** As mentioned, we've reduced the occurrence of unstable gradients. From this, it follows that our models can tolerate a wider range of hyperparameter settings such as higher learning rates, or different weight initialization schemes. As per Ioffe & Szegedy's original findings, model accuracy tends to increase as well.
+
+<Info>
+  Not entirely right - this is a particularly interesting topic I would later spend much time speaking about, specifically on the paper I mention below. I should adapt that for the blog one of these days.
+</Info>
 
 >**Okay... But why does it work?**
 >
@@ -62,8 +66,6 @@ Benefits: As mentioned, we've reduced the occurrence of unstable gradients. From
 >I can't admit to understanding their proof, but I found their deconstruction of internal covariate shift quite persuasive, and the fact that this paper directly addresses the 'why accuracy increases' question helped reassure my poor brain.
 
 I've implemented batchnorm per the coursework's instructions and verified it's correct using the given unit tests. I have the forward pass logic calling correctly inside the net, but not backward pass yet. Once I get that in place, the assignment is complete.
-
-&nbsp
 
 Also note **layer normalization** is a variant of batch norm. It's become quite popular since its inception - overtaking batch norm for paper citations:
 
