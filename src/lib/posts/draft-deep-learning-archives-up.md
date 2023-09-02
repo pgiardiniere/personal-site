@@ -1,7 +1,7 @@
 ---
-title: "Deep Learning for Computer Vision archives are up!"
-date: "2023-08-31"
-updated: "2023-08-31"
+title: "Deep Learning for Computer Vision series is up!"
+date: "2023-09-01"
+updated: "2023-09-01"
 categories:
   - "archives"
   - "cs231n"
