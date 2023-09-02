@@ -70,7 +70,7 @@ alt="partial derivative notation" style="width:40%; display:block; margin:auto;"
 Once you implement this in code, the rest of the exercise is effectively identical to the SVM one, so I won't repeat myself covering the steps to complete it.
 
 <Info>
-<b>Note:</b> That implementation can be found <a href="https://github.com/pgiardiniere/cs231n/blob/main/assignment1/cs231n/classifiers/softmax.py">here</a>.
+<b>Note:</b> That implementation can be found in <a href="https://github.com/pgiardiniere/cs231n/blob/main/assignment1/cs231n/classifiers/softmax.py">softmax.py</a>.
 </Info>
 
 ## Results
