@@ -1,0 +1,53 @@
+---
+title: "Archive: Feature extraction and fully-connected neural networks"
+date: "2021-04-12"
+updated: "2023-09-01"
+categories:
+  - "archives"
+  - "cs231n"
+  - "computer-vision"
+excerpt: 
+---
+
+<script>
+    import Info from '$lib/components/Info.svelte'
+    import Katex from '$lib/components/Katex.svelte'
+</script>
+
+<!-- Table styling -->
+<style>
+  td, th {
+    border: 1px solid var(--darker);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+</style>
+
+<Info>
+
+**Note:** Originally posted April 12th, 2021, this is post <Katex math="4/20"/> in the archived Deep Learning for Computer Vision series (cs231n).
+* Browse the full [cs231n series](http://pc2:5173/blog/category/cs231n).
+* See the source code in the [softmax](https://github.com/pgiardiniere/cs231n/blob/main/assignment1/softmax.ipynb) notebook.
+
+New comments are found exclusively in info boxes like this one.
+
+</Info>
+
+I finished the 2-layer neural net in prior post, which was A1:Q4. Today I have A1:Q5 (Extracted features) completed and progress on A2:Q1 (Fully-Connected nets).
+
+## Feature Extraction
+
+After putting together a basic 2-layer net, the authors have students do an exercise with extracted features. Feature extraction is the process of distilling some high-dimensional raw input data down to a lower-dimensional representation of the same features/attributes. To minimize loss of information, researchers use their domain expertise to discern higher level information from the dataset and use those instead of raw inputs.
+
+So in cifar-10, raw input for a given sample is just that image's pixel values. And fortunately for me, the authors brought their own domain expertise and have extracted features for us (a [Histogram of oriented gradients](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) and a hsv-rgb histogram, formatted as ndarrays, for each image). All you have to do is reshape them appropriately to plug them into your existing models for training.
+
+**Results:** *accuracies given are test accuracy, unless otherwise noted*
+
+| Model        | Feature Type            | Target Accuracy | Observed Accuracy |
+| :----------- | :---------------------- | :-------------: | :---------------: |
+| SVM          | Raw Pixels              | 39%             | 37%               |
+| SVM          | Extracted               | 44%             | 40.4%             |
+| 2-Layer net  | Raw Pixels              | 48%             | 51.7%             |
+| 2-Layer net  | Extracted               | 55%             | 56.8%             |
+
+
