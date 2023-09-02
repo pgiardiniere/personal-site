@@ -35,6 +35,6 @@ At this point, I have implemented the code which calculates scores, loss, and gr
 <b>Note:</b> Some time passes here, probably a day or two.
 </Info>
 
-**Update:** Assignment is complete - with a 2-layer fully-connected neural net I get validation accuracy of 52% and test accuracy of 51.7%. These both meet suggested targets ('good' accuracies are >48%, with instructor's best classifier hitting >52% validation accuracy).
+**Update (2021):** Assignment is complete - with a 2-layer fully-connected neural net I get validation accuracy of 52% and test accuracy of 51.7%. These both meet suggested targets ('good' accuracies are >48%, with instructor's best classifier hitting >52% validation accuracy).
 
 I've begun the higher-level features notebook (A1Q5). When that's done I'll move straight into assignment 2.
