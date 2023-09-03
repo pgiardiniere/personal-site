@@ -16,7 +16,7 @@ I also create UIs which enable deep, insightful AI experiences on both web and m
 
 <br>
 
-Most recently, I was lead developer of TraffickCam, where I overhauled the TraffickCam Search API architecture to make its services more robust & well-defined. I designed, wrote, and published the TraffickCam mobile app to Android and iOS app stores. And I maintained the TraffickCam Search web app, reducing development overhead and greatly increasing documentation coverage.
+Most recently, I was lead developer of TraffickCam. I overhauled the TraffickCam hotel search engine's microservice architecture to reduce service coupling, increasing search performance. I designed, wrote, and published the TraffickCam mobile app to Android and iOS app stores. And I maintained the TraffickCam hotel search web app, reducing development framework overhead and greatly increasing documentation coverage.
 
 <br>
 
