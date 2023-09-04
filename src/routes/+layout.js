@@ -7,7 +7,7 @@ import { error } from '@sveltejs/kit'
 // see:
 //    https://learn.svelte.dev/tutorial/csr
 //    https://kit.svelte.dev/docs/page-options 
-export const csr = true
+export const csr = false
 
 export const load = async ({ url, fetch }) => {
 	try {
