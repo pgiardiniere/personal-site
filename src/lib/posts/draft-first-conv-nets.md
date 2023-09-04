@@ -43,7 +43,7 @@ Implementing the 3-layer ConvNet the assignment has you create requires you comp
 **TODO:** Implement Spatial/Group batch normalization per the instructions.
 
 <Info>
-Either this one fell through the cracks or I was directed to move ahead (can't remember which), but I definitely never finished it. Might make for a fun exercise one of these days.
+I remember being directed to skip ahead on implementing these types of batch norm for sake of time, and unfortunately I never got to finish it out. Would make for a fun exercise one of these days.
 </Info>
 
 **Update (2021):** Have been reading through both the PyTorch and TensorFlow notebooks to get a general sense of how they differ, as well as looking through instructions to get PyTorch installed on my system (in a sane way). But I'll finish the 'from-scratch'-CNN before moving on.
