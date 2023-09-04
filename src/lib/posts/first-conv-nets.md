@@ -6,7 +6,7 @@ categories:
   - "archives"
   - "cs231n"
   - "computer-vision"
-excerpt: None
+excerpt: Implementing convolutional neural networks forwards and backwards passes with Numpy, and convolution weights visualization/interpretation.
 ---
 
 <script>
