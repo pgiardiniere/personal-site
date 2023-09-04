@@ -59,8 +59,7 @@ This did get done, see the trained first layer's weights (<Katex math="W_1" />) 
   style="width:40%; display:block; margin:auto;"
 >
 
-This shows each of our 32 convolutional filters (<Katex math="F"/>) from the first layer (<Katex math="W_1"/>), where each filter has 3 channels, each of size <Katex math="32x32"/> (i.e. <Katex math={W}/>)
-, making direct grid visualization an easy way to inspect what's happening.
+This shows each of our 32 convolutional filters (<Katex math="F"/>) from the first layer (<Katex math="W_1"/>), where each filter has 3 channels, each of size <Katex math="32 \times 32"/> (i.e. <Katex math={W}/>). Since each filter has an immediate visual interpretation, grid visualization an easy way to inspect what's happening.
 
 We can see some edge detectors are learned for vertical & horizontal edges, among other things. I'm sure there's a more recent source which demonstrates this better, but you can see more about this technique of visualizing and interpreting CNN weights in [this video](https://www.youtube.com/watch?v=AgkfIQ4IGaM).
 
