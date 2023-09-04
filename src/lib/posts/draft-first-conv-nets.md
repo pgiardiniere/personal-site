@@ -12,6 +12,8 @@ excerpt: None
 <script>
     import Info from '$lib/components/Info.svelte'
     import Katex from '$lib/components/Katex.svelte'
+
+    const W="W_1 \\in \ℝ^\{F \\times C \\times H \\times W\} = \ℝ^\{32 \\times 3 \\times 32 \\times 32\}"
 </script>
 
 <Info>
@@ -47,3 +49,19 @@ I remember being directed to skip ahead on implementing these types of batch nor
 </Info>
 
 **Update (2021):** Have been reading through both the PyTorch and TensorFlow notebooks to get a general sense of how they differ, as well as looking through instructions to get PyTorch installed on my system (in a sane way). But I'll finish the 'from-scratch'-CNN before moving on.
+
+<Info>
+This did get done, see the trained first layer's weights (<Katex math="W_1" />) visualized:
+
+<img 
+  src="/images/first-conv-layer-weights-visualization.png" 
+  alt="First convultion layer weights visualized" 
+  style="width:40%; display:block; margin:auto;"
+>
+
+This shows each of our 32 convolutional filters (<Katex math="F"/>) from the first layer (<Katex math="W_1"/>), where each filter has 3 channels, each of size <Katex math="32x32"/> (i.e. <Katex math={W}/>)
+, making direct grid visualization an easy way to inspect what's happening.
+
+We can see some edge detectors are learned for vertical & horizontal edges, among other things. I'm sure there's a more recent source which demonstrates this better, but you can see more about this technique of visualizing and interpreting CNN weights in [this video](https://www.youtube.com/watch?v=AgkfIQ4IGaM).
+
+</Info>
