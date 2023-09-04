@@ -33,12 +33,12 @@ The [convolutional network notes](https://cs231n.github.io/convolutional-network
 Fortunately, I was given a very brief introduction to convolutional nets in some coursework this semester (amusingly, through slides which appear to be largely adapted from the cs231n course material), but it took me a while to understand one of the bigger 'wins' of convolution - specifically, that while particular image filters in the past were the result of careful study and domain expertise, that now, you can have a model learn useful filters (i.e. convolutional layer weights) through an automated process. This is an oversimplification, but I feel a useful heuristic/frame-of-reference when starting out.
 
 <Info>
-There's so much more to it than that - I didn't even mention priors. The way the network structure complements the input data structure (images) with naturally occurring soft attention, etc.
+There's so much more to it than that - I didn't even mention priors. The way the network structure complements the input data structure of images with naturally occurring soft attention. etc.
 </Info>
 
 With at least something resembling an idea of my goal, it was relatively straightforward to implement the naive forward/backward passes the assignment has you start off with (after getting accustomed to working with non-flattened input data). I ran the unit tests and noted the accuracies were all within listed tolerances.
 
-Implementing the 3-layer ConvNet the assignment has you create requires you compile the Cython code shipped with the starter code. After messing about for a bit getting the those extensions to compile properly, I was able to compose that in much the same way as the affine layers before. I was able to verify these are working as anticipated by overfitting on a toy dataset of few samples.
+Implementing the 3-layer ConvNet the assignment has you create requires you compile the Cython code shipped with the starter code. After messing about for a bit getting the those extensions to compile properly, I was able to compose that in much the same way as the affine layers before. I was able to verify these are working as anticipated by overfitting on a toy dataset of a few samples.
 
 **TODO:** Implement Spatial/Group batch normalization per the instructions.
 
