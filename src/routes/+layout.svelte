@@ -7,11 +7,8 @@
 	import { navItems } from '$lib/config'
 	import { preloadCode } from '$app/navigation'
 	import { onMount } from 'svelte'
-	import { fade } from 'svelte/transition'
 	export let data
 
-	const transitionIn = { delay: 150, duration: 150 }
-	const transitionOut = { duration: 100 }
 	
 	/**
 	 * Updates the global store with the current path. (Used for highlighting 
@@ -44,8 +41,6 @@
 		<main
 			id="main"
 			tabindex="-1"
-			in:fade={transitionIn}
-			out:fade={transitionOut}
 		>
 			<slot />
 		</main>
