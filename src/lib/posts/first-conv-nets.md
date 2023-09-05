@@ -18,7 +18,7 @@ excerpt: Implementing convolutional neural networks forwards and backwards passe
 
 <Info>
 
-**Note:** Originally posted April 29th, 2021, this is post <Katex math="7/20"/> in the archived Deep Learning for Computer Vision series (cs231n). 
+**Note:** Originally posted April 29th, 2021, this is post <Katex math="7"/> in the archived Deep Learning for Computer Vision series (cs231n). 
 * Browse the full [cs231n series](/blog/category/cs231n).
 * See the source code in the [ConvolutionalNetworks](https://github.com/pgiardiniere/cs231n/blob/main/assignment2/ConvolutionalNetworks.ipynb) notebook.
 
