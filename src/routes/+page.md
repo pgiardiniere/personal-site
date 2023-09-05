@@ -5,7 +5,7 @@
 # Hey, I'm Pete.
 
 <h4>
-I'm a software developer with a passion for creating performant, maintainable Machine Learning pipelines and infrastructure.
+I'm a software developer with a passion for creating performant, maintainable machine learning pipelines and infrastructure.
 <br>
 <br>
 
