@@ -22,6 +22,4 @@ Most recently, I was lead developer of TraffickCam. I overhauled the TraffickCam
 
 * [Projects I've worked on](/projects)
 
-* [More about me](/about)
-
 * [The blog](/blog)
