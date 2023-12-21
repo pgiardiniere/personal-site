@@ -8,9 +8,9 @@
 
 # TraffickCam
 
-I worked on the [TraffickCam project](http://traffickcam.org/about) for 3 years. TraffickCam prevents human trafficking by applying state-of-the-art computer vision techniques to a unique dataset of hotel room images, in partnership with the [National Center for Missing Exploited Children](https://www.missingkids.org/home).
+I've worked on the [TraffickCam project](http://traffickcam.org/about) for over 3 years. TraffickCam prevents human trafficking by applying state-of-the-art computer vision techniques to a unique dataset of hotel room images, in partnership with the [National Center for Missing Exploited Children](https://www.missingkids.org/home).
 
-I was the Mobile Developer for 1 year, and then Lead Developer for 2 years. I was entrusted with ownership of all production systems, including: Search, Mobile, the Search API, and more.
+I was the Mobile Developer for 1 year before shifting to Software Engineer. I am entrusted with ownership of all production systems, including: Search, Mobile, the Search API, and more.
 
 ## TraffickCam Search
 
